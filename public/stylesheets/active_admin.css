@@ -1607,3 +1607,5 @@ table.dashboard {
   padding: 0; }
   .columns .column {
     float: left; }
+
+.send_email_button {margin-left:220px;}

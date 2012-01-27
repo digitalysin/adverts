@@ -26,6 +26,12 @@ ActiveAdmin.register SiteConfiguration do
       f.input :site_name
       f.input :meta_keyword
       f.input :meta_description
+      f.input :maximum_premium_ads_per_page
+      f.input :maximum_free_ads_per_page
+      f.input :minimum_content_ads, :label => "Minimum content words"
+      f.input :exclusion_words, :as => :text, :input_html => {:rows => 7}, :hint => "Separated by comma, eg : porn,junk,sex"
+      f.input :price_premium_ads_per_month
+      f.input :price_links_per_month
       f.input :site_footer, :as => :text, :input_html => {:rows => 7}
       f.input :header_image, :as => :file
       f.input :admin_email, :label => "Administrator Email"
@@ -41,6 +47,12 @@ ActiveAdmin.register SiteConfiguration do
         row :site_name
         row :meta_keyword
         row :meta_description
+        row :maximum_premium_ads_per_page
+        row :maximum_free_ads_per_page
+        row :minimum_content_ads
+        row :exclusion_words
+        row :price_premium_ads_per_month
+        row :price_links_per_month
         row :site_footer do 
           resource.site_footer.html_safe
         end

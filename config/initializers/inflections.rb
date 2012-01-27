@@ -8,3 +8,9 @@
 #   inflect.irregular 'person', 'people'
 #   inflect.uncountable %w( fish sheep )
 # end
+
+class String
+  def to_erb
+   self.gsub("&lt;","<").gsub("&gt;",">")
+  end
+end

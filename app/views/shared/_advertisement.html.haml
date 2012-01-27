@@ -1,20 +1,21 @@
-- Advertisement.premium_ads.each do |ads|
+- @premium_advertisements.each do |ads|
   .contentleft.premium
     %h1
       = link_to ads.title, advertisement_path(ads.slug), :target => :_blank, :class => :date
-    .tgl= ads.created_at.strftime("%d, %B %Y")
+    .tgl= ads.created_at.strftime("%d, %B %Y") + " | Dibaca #{ads.times_readed.present? ? ads.times_readed : 0 } kali"
     .desc
       = image_tag ads.image_url(:thumb)
       = truncate(ads.content.html_safe, :length => 200)
     .labelnya Iklan Premium
     
-- Advertisement.free_ads.each do |ads|
+- @free_advertisements.each do |ads|
   .contentleft
     %h1
       = link_to ads.title, advertisement_path(ads.slug), :target => :_blank, :class => :date
-    .tgl= ads.created_at.strftime("%d, %B %Y")
+    .tgl= ads.created_at.strftime("%d, %B %Y") + " | Dibaca #{ads.times_readed.present? ? ads.times_readed : 0 } kali"
     .desc
       = image_tag ads.image_url(:thumb)
       = truncate(ads.content.html_safe, :length => 200)
     .labelnya Iklan Gratis
-      
+
+= paginate @free_advertisements

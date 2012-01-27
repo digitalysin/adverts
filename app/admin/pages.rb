@@ -48,7 +48,7 @@ ActiveAdmin.register Page do
   form do |f|
     f.inputs do
       f.input :title
-      f.input :content, :as => :text
+      f.input :content, :as => :text, :input_html => {:class => "ckeditor"}
       f.input :slug
       f.input :meta_content
       f.input :meta_keyword
@@ -56,5 +56,5 @@ ActiveAdmin.register Page do
     end
     f.buttons
   end
-
+  
 end

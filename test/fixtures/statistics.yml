@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  today: 2012-01-27
+  total_ads_for_today: 1
+  total_ads_for_yesterday: 1
+  total_ads: 1
+  total_visit_for_today: 1
+  total_visited: 1
+
+two:
+  today: 2012-01-27
+  total_ads_for_today: 1
+  total_ads_for_yesterday: 1
+  total_ads: 1
+  total_visit_for_today: 1
+  total_visited: 1

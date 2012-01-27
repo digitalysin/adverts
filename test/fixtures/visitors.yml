@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ip_address: MyString
+  path_info: MyString
+  date_visited: 2012-01-27
+
+two:
+  ip_address: MyString
+  path_info: MyString
+  date_visited: 2012-01-27

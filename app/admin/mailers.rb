@@ -34,10 +34,10 @@ ActiveAdmin.register Mailer do
 
   form do |f|
     f.inputs do
-      f.input :confirmation_email, :as => :text, :input_html => {:rows => 7}
-      f.input :regular_email, :as => :text, :input_html => {:rows => 7}
-      f.input :activation_email, :as => :text, :input_html => {:rows => 7}
-      f.input :deactivation_email, :as => :text, :input_html => {:rows => 7}
+      f.input :confirmation_email, :as => :text, :input_html => {:rows => 7, :class => :ckeditor}
+      f.input :regular_email, :as => :text, :input_html => {:rows => 7, :class => :ckeditor}
+      f.input :activation_email, :as => :text, :input_html => {:rows => 7, :class => :ckeditor}
+      f.input :deactivation_email, :as => :text, :input_html => {:rows => 7, :class => :ckeditor}
     end
     f.buttons
   end

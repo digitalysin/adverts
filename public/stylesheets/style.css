@@ -626,3 +626,23 @@ div.related_ads_title {
 .no_result {
 	font-size:16px;font-weight:bold;
 }
+
+.pagination {display:block;padding:10px;float:right;}
+.page {margin:2px;padding:5px;}
+.current {
+	background-color:#41B7D8;color:#FFFFFF;
+}
+.statistic {margin:5px 0px;}
+.statistic h4 {
+	color:#26A1C7;
+	font:bold 14px Arial,Helvetica,sans-serif;
+	margin:5px 0px;
+	border-bottom:4px solid #26A1C7;
+}
+.statistic ul li {margin-bottom:3px;}
+.statistic-span-left {
+	float:left;font-weight:bold;display:block;width:130px;
+}
+.statistic-span-rigth {
+	float:right;display:block;
+}

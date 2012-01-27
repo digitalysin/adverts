@@ -11,6 +11,13 @@ ActiveAdmin.register Link do
   
   config.clear_sidebar_sections!
   
+  index do
+    column :name
+    column :email
+    column :website
+    default_actions
+  end
+  
   form do |f|
     f.inputs do
       f.input :name
@@ -37,9 +44,9 @@ ActiveAdmin.register Link do
     
     panel "Email" do
       def build_input_and_textarea(textarea_name,submit_value,mailer_content)
-        textarea :name => textarea_name, :rows => 10 do mailer_content end 
+        textarea :name => textarea_name,:class => :ckeditor, :rows => 10 do mailer_content end 
         br
-        input :type => :submit, :value => "#{submit_value}", :onclick => "sendEmail(event,'#{textarea_name}')"
+        input :type => :submit, :value => "#{submit_value}", :onclick => "sendEmail(event,'#{textarea_name}')", :class => "send_email_button"
         br
       end
       

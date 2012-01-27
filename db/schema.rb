@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120126124815) do
+ActiveRecord::Schema.define(:version => 20120127064202) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -192,6 +192,31 @@ ActiveRecord::Schema.define(:version => 20120126124815) do
     t.string   "header_image"
     t.string   "admin_email"
     t.string   "admin_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "maximum_premium_ads_per_page"
+    t.integer  "maximum_free_ads_per_page"
+    t.integer  "minimum_content_ads"
+    t.float    "price_premium_ads_per_month"
+    t.float    "price_links_per_month"
+    t.text     "exclusion_words"
+  end
+
+  create_table "statistics", :force => true do |t|
+    t.date     "today"
+    t.integer  "total_ads_for_today"
+    t.integer  "total_ads_for_yesterday"
+    t.integer  "total_ads"
+    t.integer  "total_visit_for_today"
+    t.integer  "total_visited"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "visitors", :force => true do |t|
+    t.string   "ip_address"
+    t.string   "path_info"
+    t.date     "date_visited"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

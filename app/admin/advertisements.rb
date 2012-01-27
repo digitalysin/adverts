@@ -31,7 +31,7 @@ ActiveAdmin.register Advertisement do
       f.input :phone, :as => :phone
       f.input :title
       f.input :site
-      f.input :content, :as => :text, :input_html => {:rows => 7}
+      f.input :content, :as => :text, :input_html => {:rows => 7, :class => :ckeditor}
       f.input :tag
       f.input :image, :as => :file
       f.input :enabled
@@ -68,9 +68,9 @@ ActiveAdmin.register Advertisement do
     
     panel "Email" do
       def build_input_and_textarea(textarea_name,submit_value,mailer_content)
-        textarea :name => textarea_name, :rows => 10 do mailer_content end 
+        textarea :name => textarea_name,:class => :ckeditor, :rows => 10 do mailer_content end 
         br
-        input :type => :submit, :value => "#{submit_value}", :onclick => "sendEmail(event,'#{textarea_name}')"
+        input :type => :submit, :value => "#{submit_value}", :onclick => "sendEmail(event,'#{textarea_name}')", :class => "send_email_button"
         br
       end
       

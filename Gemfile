@@ -37,6 +37,8 @@ gem 'haml-rails'
 gem 'passenger'
 gem 'activeadmin'
 gem 'rmagick'
+gem 'kaminari'
+gem "ckeditor", "~> 3.6.0"
 
 group :development do 
   gem 'pry'
