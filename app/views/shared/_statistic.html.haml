@@ -3,13 +3,13 @@
   %ul
     %li
       %span.statistic-span-left Iklan hari ini
-      %span.statistic-span-right 1000
+      %span.statistic-span-right= @statistic.total_ads_for_today
     %li
       %span.statistic-span-left Iklan kemarin
-      %span.statistic-span-right 1000
+      %span.statistic-span-right= @statistic.total_ads_for_yesterday
     %li
       %span.statistic-span-left Total Iklan
-      %span.statistic-span-right 1000
+      %span.statistic-span-right= @statistic.total_ads
     %li
       %span.statistic-span-left Kunjungan hari ini
       %span.statistic-span-right= @statistic.total_visit_for_today
