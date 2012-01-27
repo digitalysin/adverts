@@ -1,0 +1,6 @@
+- if flash[:notice].present?
+  .notice_container
+    %h2= flash[:notice]
+.banner_page
+  = @advertisement_page.content.html_safe
+= render "form"

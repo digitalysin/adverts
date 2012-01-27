@@ -1,0 +1,39 @@
+#form_banner
+	- if @link.errors.any?
+		.error_container
+			%h2
+				= pluralize(@link.errors.size, "error")
+				prohibited this link from being saved
+			%ul
+				- @link.errors.full_messages.each do |message|
+					%li= message
+
+	= form_for @link do |f|
+		%table
+			%tr
+				%td= f.label :anchor
+				%td :
+				%td= f.text_field :anchor
+			%tr
+				%td= f.label :website
+				%td :
+				%td= f.text_field :website
+			%tr
+				%td= f.label "Lama Pasang"
+				%td :
+				%td= f.collection_select :link_price_id, LinkPrice.all, :id, :name
+			%tr
+				%td= f.label :name
+				%td :
+				%td= f.text_field :name
+			%tr
+				%td= f.label :email
+				%td :
+				%td= f.text_field :email
+			%tr
+				%td= f.label :phone
+				%td :
+				%td= f.text_field :phone
+			%tr
+				%td(colspan='3' style='text-align:center')= f.submit
+		

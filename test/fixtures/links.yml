@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  anchor: google
+  website: http://google.com
+  link_price_id: 1
+  name: larry page
+  email: larry@google.com
+  phone: 123-456-789
+
+two:
+  anchor: microsoft
+  website: http://microsoft.com
+  link_price_id: 2
+  name: bill gates
+  email: bill@microsoft.com
+  phone: 987-654-321

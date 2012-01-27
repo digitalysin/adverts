@@ -1,0 +1,85 @@
+#form_banner
+  - if @advertisement.errors.present?
+    .error_container
+      %h2 
+        = pluralize(@advertisement.errors.count, "error")
+        prohibited this advertisement from being saved
+      %ul
+        - @advertisement.errors.full_messages.each do |message|
+          %li= message
+    
+  = form_for @advertisement, :html => {:multipart => true} do |f|
+    %table
+      %tr
+        %td= f.label :nama
+        %td :
+        %td= f.text_field :name
+      %tr
+        %td= f.label :email
+        %td :
+        %td= f.text_field :email
+      %tr
+        %td= f.label :kota
+        %td :
+        %td= f.text_field :city
+      %tr
+        %td= f.label :telepon
+        %td :
+        %td= f.text_field :phone
+      %tr
+        %td= f.label :tipe_iklan
+        %td :
+        %td
+          = f.collection_select :advertisement_type_id, AdvertisementType.all, :id, :name, 
+            {}, {:onchange => "showprice(event,'showprice');"}
+          %br
+          %table#showprice{:style => "display:none"}
+            %tr
+              %td= f.label :lama
+              %td :
+              %td= f.collection_select :advertisement_price_id, AdvertisementPrice.all, :id, :name
+            
+      %tr
+        %td= f.label :kategori_iklan
+        %td :
+        %td
+          %select{:id => :advertisement_advertisement_category_id, :name => "advertisement[advertisement_category_id]"}
+            - AdvertisementCategory.order(:name).includes(:sub_category).each do |ac|
+              - if ac.sub_category.present?
+                %option{:disabled => :disabled}= ac.name
+                - ac.sub_category.each do |sub|
+                  %option{:value => sub.id}= "&nbsp;&nbsp;#{sub.name}".html_safe
+      %tr
+        %td= f.label :judul
+        %td :
+        %td= f.text_field :title
+      %tr
+        %td= f.label :website
+        %td :
+        %td
+          = f.text_field :site
+          %br
+          %p.red_notif mohon sertakan http:// pada website anda
+      %tr
+        %td= f.label :isi
+        %td :
+        %td= f.text_area :content, :cols => 45, :rows => 5
+      %tr
+        %td= f.label 'label/tag'
+        %td :
+        %td
+          = f.text_field :tag
+          %br
+          %p.red_notif 
+            Kata atau phrase yang mewakili iklan Anda, pisahkan dengan koma (,)
+            %br
+            Contoh: iklan, free ads
+      %tr
+        %td Gambar
+        %td :
+        %td= f.file_field :image
+      %tr
+        %td
+        %td
+        %td= f.submit "Submit"
+      

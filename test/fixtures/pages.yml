@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  content: MyText
+  slug: MyString
+  meta_keyword: MyString
+  meta_content: MyString
+  enabled: false
+  model_for: MyString
+
+two:
+  title: MyString
+  content: MyText
+  slug: MyString
+  meta_keyword: MyString
+  meta_content: MyString
+  enabled: false
+  model_for: MyString

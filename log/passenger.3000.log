@@ -1,0 +1,223 @@
+[ pid=7228 thr=357700 file=utils.rb:176 time=2012-01-26 15:18:15.947 ]: *** Exception PhusionPassenger::UnknownError in PhusionPassenger::Rack::ApplicationSpawner (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2) (Mysql2::Error)) (process 7228, thread #<Thread:0x0aea88>):
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/mysql2-0.2.18/lib/mysql2/client.rb:44:in `connect'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/mysql2-0.2.18/lib/mysql2/client.rb:44:in `initialize'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/mysql2-0.2.18/lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `new'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/mysql2-0.2.18/lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `mysql2_connection'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `new_connection'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:237:in `checkout_new_connection'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:191:in `block (2 levels) in checkout'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:187:in `loop'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:187:in `block in checkout'
+	from /Users/hashirama/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:186:in `checkout'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:94:in `connection'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:317:in `retrieve_connection'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:97:in `retrieve_connection'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:89:in `connection'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/arel-2.0.10/lib/arel/table.rb:131:in `table_cache'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/arel-2.0.10/lib/arel/table.rb:126:in `tables'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/arel-2.0.10/lib/arel/table.rb:122:in `table_exists?'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/arel-2.0.10/lib/arel/table.rb:101:in `[]'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/relation/predicate_builder.rb:23:in `block in build_from_hash'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/relation/predicate_builder.rb:9:in `each'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/relation/predicate_builder.rb:9:in `map'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/relation/predicate_builder.rb:9:in `build_from_hash'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/relation/query_methods.rb:226:in `build_where'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/relation/query_methods.rb:76:in `where'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activerecord-3.0.9/lib/active_record/base.rb:447:in `where'
+	from /Volumes/OTHERS/RailsWay/adverts/app/models/advertisement.rb:13:in `<class:Advertisement>'
+	from /Volumes/OTHERS/RailsWay/adverts/app/models/advertisement.rb:1:in `<top (required)>'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:454:in `load'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:454:in `block in load_file'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:596:in `new_constants_in'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:453:in `load_file'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:340:in `require_or_load'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:491:in `load_missing_constant'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:183:in `block in const_missing'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:181:in `each'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:181:in `const_missing'
+	from /Volumes/OTHERS/RailsWay/adverts/app/admin/advertisements.rb:1:in `<top (required)>'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:235:in `load'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:235:in `block in load'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:225:in `block in load_dependency'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:596:in `new_constants_in'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:235:in `load'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activeadmin-0.3.4/lib/active_admin/application.rb:132:in `block in load!'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activeadmin-0.3.4/lib/active_admin/application.rb:132:in `each'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activeadmin-0.3.4/lib/active_admin/application.rb:132:in `load!'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activeadmin-0.3.4/lib/active_admin/application.rb:155:in `routes'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activeadmin-0.3.4/lib/active_admin.rb:63:in `routes'
+	from /Volumes/OTHERS/RailsWay/adverts/config/routes.rb:2:in `block in <top (required)>'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:233:in `instance_exec'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:233:in `draw'
+	from /Volumes/OTHERS/RailsWay/adverts/config/routes.rb:1:in `<top (required)>'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:235:in `load'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:235:in `block in load'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:225:in `block in load_dependency'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:596:in `new_constants_in'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/dependencies.rb:235:in `load'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/application.rb:127:in `block in reload_routes!'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/application.rb:127:in `each'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/application.rb:127:in `reload_routes!'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activeadmin-0.3.4/lib/active_admin/reloader.rb:34:in `reload!'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activeadmin-0.3.4/lib/active_admin/reloader.rb:28:in `block in initialize'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/file_update_checker.rb:32:in `call'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/file_update_checker.rb:32:in `execute_if_updated'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activeadmin-0.3.4/lib/active_admin/reloader.rb:45:in `block in attach!'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:420:in `_run_prepare_callbacks'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:40:in `initialize'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/actionpack-3.0.9/lib/action_dispatch/middleware/stack.rb:33:in `new'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/actionpack-3.0.9/lib/action_dispatch/middleware/stack.rb:33:in `build'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/actionpack-3.0.9/lib/action_dispatch/middleware/stack.rb:79:in `block in build'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/actionpack-3.0.9/lib/action_dispatch/middleware/stack.rb:79:in `each'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/actionpack-3.0.9/lib/action_dispatch/middleware/stack.rb:79:in `inject'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/actionpack-3.0.9/lib/action_dispatch/middleware/stack.rb:79:in `build'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/application.rb:162:in `app'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/application/finisher.rb:35:in `block in <module:Finisher>'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/initializable.rb:25:in `instance_exec'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/initializable.rb:25:in `run'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/initializable.rb:50:in `block in run_initializers'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/initializable.rb:49:in `each'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/initializable.rb:49:in `run_initializers'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/application.rb:134:in `initialize!'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+	from /Volumes/OTHERS/RailsWay/adverts/config/environment.rb:5:in `<top (required)>'
+	from config.ru:3:in `require'
+	from config.ru:3:in `block in <main>'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/rack-1.2.4/lib/rack/builder.rb:46:in `instance_eval'
+	from /Users/hashirama/.rvm/gems/ruby-1.9.2-head@rails309/gems/rack-1.2.4/lib/rack/builder.rb:46:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:222:in `eval'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:222:in `load_rack_app'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:156:in `block in initialize_server'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:572:in `report_app_init_status'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:153:in `initialize_server'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /Users/hashirama/.passenger/standalone/3.0.9-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+[ pid=7226 thr=0xb00d8000 file=ext/nginx/HelperAgent.cpp:931 time=2012-01-26 15:18:16.85 ]: Uncaught exception in PassengerServer client thread:
+   exception: write() failed: Broken pipe (32)
+   backtrace:
+     in 'void Client::handleRequest(Passenger::FileDescriptor&)' (HelperAgent.cpp:826)
+     in 'void Client::threadMain()' (HelperAgent.cpp:950)
+
+[ pid=14148 thr=0xb00d8000 file=ext/nginx/HelperAgent.cpp:921 time=2012-01-26 15:35:25.137 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=14204 thr=0xb010b000 file=ext/nginx/HelperAgent.cpp:921 time=2012-01-26 15:35:45.877 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=14204 thr=0xb0309000 file=ext/nginx/HelperAgent.cpp:921 time=2012-01-26 15:38:17.396 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+
+[1mFrom:[0m /Volumes/OTHERS/RailsWay/adverts/app/admin/advertisements.rb @ line 3 in ActiveAdmin::Views::IndexAsTable#N/A:
+
+     [1;34m1[0m: [34m[4mActiveAdmin[0m.register [34m[4mAdvertisement[0m [1;31mdo[0m
+     [1;34m2[0m:   index [1;31mdo[0m
+ =>  [1;34m3[0m:     binding.pry
+     [1;34m4[0m:     column [1;32m:name[0m
+     [1;34m5[0m:     column [1;32m:email[0m
+     [1;34m6[0m:     column [1;32m:site[0m [1;31mdo[0m |advertisement|
+     [1;34m7[0m:       link_to advertisement.site , advertisement.site, [1;32m:target[0m => [1;32m:_blank[0m
+     [1;34m8[0m:     [1;31mend[0m
+
+
+[1mFrom:[0m /Volumes/OTHERS/RailsWay/adverts/app/admin/advertisements.rb @ line 3 in ActiveAdmin::Views::IndexAsTable#N/A:
+
+     [1;34m1[0m: [34m[4mActiveAdmin[0m.register [34m[4mAdvertisement[0m [1;31mdo[0m
+     [1;34m2[0m:   index [1;31mdo[0m
+ =>  [1;34m3[0m:     binding.pry
+     [1;34m4[0m:     column [1;32m:name[0m
+     [1;34m5[0m:     column [1;32m:email[0m
+     [1;34m6[0m:     column [1;32m:site[0m [1;31mdo[0m |advertisement|
+     [1;34m7[0m:       link_to advertisement.site , advertisement.site, [1;32m:target[0m => [1;32m:_blank[0m
+     [1;34m8[0m:     [1;31mend[0m
+
+[ pid=19622 thr=0xb010b000 file=ext/nginx/HelperAgent.cpp:921 time=2012-01-26 20:47:40.279 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+
+[1mFrom:[0m /Volumes/OTHERS/RailsWay/adverts/app/admin/mailers.rb @ line 36 in ActiveAdmin::DSL#N/A:
+
+    [1;34m31[0m:       [1;31mend[0m
+    [1;34m32[0m:     [1;31mend[0m
+    [1;34m33[0m:   [1;31mend[0m 
+    [1;34m34[0m:   
+    [1;34m35[0m:   form [1;31mdo[0m |f|
+ => [1;34m36[0m:     binding.pry
+    [1;34m37[0m:     f.inputs [1;31mdo[0m
+    [1;34m38[0m:       f.input [1;32m:confirmation_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+    [1;34m39[0m:       f.input [1;32m:regular_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+    [1;34m40[0m:       f.input [1;32m:activation_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+    [1;34m41[0m:       f.input [1;32m:deactivation_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+
+
+[1mFrom:[0m /Volumes/OTHERS/RailsWay/adverts/app/admin/mailers.rb @ line 36 in ActiveAdmin::DSL#N/A:
+
+    [1;34m31[0m:       [1;31mend[0m
+    [1;34m32[0m:     [1;31mend[0m
+    [1;34m33[0m:   [1;31mend[0m 
+    [1;34m34[0m:   
+    [1;34m35[0m:   form [1;31mdo[0m |f|
+ => [1;34m36[0m:     binding.pry
+    [1;34m37[0m:     f.inputs [1;31mdo[0m
+    [1;34m38[0m:       f.input [1;32m:confirmation_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+    [1;34m39[0m:       f.input [1;32m:regular_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+    [1;34m40[0m:       f.input [1;32m:activation_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+    [1;34m41[0m:       f.input [1;32m:deactivation_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+
+
+[1mFrom:[0m /Volumes/OTHERS/RailsWay/adverts/app/views/admin/_form.html.haml @ line 1 in #<Class:0x4c4fab4>#_app_views_admin__form_html_haml__28784614_40314850__375578744:
+
+ =>  [1;34m1[0m: - binding.pry
+     [1;34m2[0m: - semantic_form_for @mailer [1;31mdo[0m |f|
+     [1;34m3[0m:   - f.inputs [1;31mdo[0m
+     [1;34m4[0m:     - f.input [1;32m:confirmation_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+     [1;34m5[0m:     - f.input [1;32m:regular_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+     [1;34m6[0m:     - f.input [1;32m:activation_email[0m, [1;32m:as[0m => [1;32m:text[0m, [1;32m:input_html[0m => {[1;32m:rows[0m => [1;34m7[0m}
+
+
+[1mFrom:[0m /Volumes/OTHERS/RailsWay/adverts/app/admin/mailers.rb @ line 34 in ActiveAdmin::DSL#N/A:
+
+    [1;34m29[0m:         row [1;32m:activation_email[0m     [1;31mdo[0m truncate mailer.activation_email.html_safe, [1;32m:length[0m => [1;34m200[0m [1;31mend[0m
+    [1;34m30[0m:         row [1;32m:deactivation_email[0m   [1;31mdo[0m truncate mailer.deactivation_email.html_safe, [1;32m:length[0m => [1;34m200[0m [1;31mend[0m
+    [1;34m31[0m:       [1;31mend[0m
+    [1;34m32[0m:     [1;31mend[0m
+    [1;34m33[0m:   [1;31mend[0m 
+ => [1;34m34[0m:   binding.pry
+    [1;34m35[0m:   form [1;32m:partial[0m => [32m[1;32m"[0m[32madmin/form[1;32m"[0m[32m[0m
+    [1;34m36[0m:   [0;34m# form do |f|[0m
+    [1;34m37[0m:   [0;34m#   f.inputs do[0m
+    [1;34m38[0m:   [0;34m#     f.input :confirmation_email, :as => :text, :input_html => {:rows => 7}[0m
+    [1;34m39[0m:   [0;34m#     f.input :regular_email, :as => :text, :input_html => {:rows => 7}[0m
+
+
+[1mFrom:[0m /Volumes/OTHERS/RailsWay/adverts/app/admin/mailers.rb @ line 2 in ActiveAdmin::DSL#N/A:
+
+     [1;34m1[0m: [34m[4mActiveAdmin[0m.register [34m[4mMailer[0m [1;31mdo[0m
+ =>  [1;34m2[0m:     binding.pry
+     [1;34m3[0m:   config.clear_sidebar_sections!
+     [1;34m4[0m:   config.clear_action_items!
+     [1;34m5[0m:   
+     [1;34m6[0m:   action_item [1;32m:only[0m => [1;32m:show[0m [1;31mdo[0m
+     [1;34m7[0m:     link_to([32m[1;32m"[0m[32mBack[1;32m"[0m[32m[0m, admin_mailers_path) + link_to([32m[1;32m"[0m[32mEdit[1;32m"[0m[32m[0m, edit_admin_mailer_path(resource))
+
+
+[1mFrom:[0m /Volumes/OTHERS/RailsWay/adverts/app/admin/mailers.rb @ line 2 in ActiveAdmin::DSL#N/A:
+
+     [1;34m1[0m: [34m[4mActiveAdmin[0m.register [34m[4mMailer[0m [1;31mdo[0m
+ =>  [1;34m2[0m:     binding.pry
+     [1;34m3[0m:   config.clear_sidebar_sections!
+     [1;34m4[0m:   config.clear_action_items!
+     [1;34m5[0m:   
+     [1;34m6[0m:   action_item [1;32m:only[0m => [1;32m:show[0m [1;31mdo[0m
+     [1;34m7[0m:     link_to([32m[1;32m"[0m[32mBack[1;32m"[0m[32m[0m, admin_mailers_path) + link_to([32m[1;32m"[0m[32mEdit[1;32m"[0m[32m[0m, edit_admin_mailer_path(resource))
+

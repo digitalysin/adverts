@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  site_name: MyString
+  site_title: MyString
+  meta_keyword: MyString
+  meta_description: MyString
+  language: MyString
+  charset: MyString
+  site_footer: MyString
+  time_zone: MyString
+  session_time: 2011-10-12
+  session_use_db: false
+  session_match_ip: false
+  session_match_browser: false
+  header_image: MyString
+  admin_email: MyString
+  admin_name: MyString
+
+two:
+  site_name: MyString
+  site_title: MyString
+  meta_keyword: MyString
+  meta_description: MyString
+  language: MyString
+  charset: MyString
+  site_footer: MyString
+  time_zone: MyString
+  session_time: 2011-10-12
+  session_use_db: false
+  session_match_ip: false
+  session_match_browser: false
+  header_image: MyString
+  admin_email: MyString
+  admin_name: MyString

@@ -1,0 +1,40 @@
+#form_banner
+  - if @contact.errors.present?
+    .error_container
+      %h2
+        = pluralize(@contact.errors.count, "error")
+        prohibited this contact from being saved
+      %ul
+        - @contact.errors.full_messages.each do |message|
+          %li= message
+
+  = form_for @contact do |f|
+    %table
+      %tr
+        %td= f.label :name
+        %td :
+        %td= f.text_field :name
+      %tr
+        %td= f.label :email
+        %td :
+        %td= f.text_field :email
+      %tr
+        %td= f.label :address
+        %td   :
+        %td= f.text_field :address
+      %tr
+        %td= f.label :website
+        %td :
+        %td= f.text_field :website
+      %tr
+        %td= f.label :phone
+        %td :
+        %td= f.text_field :phone
+      %tr
+        %td= f.label :message
+        %td :
+        %td= f.text_area :message, :cols=>50, :rows=>5
+      %tr
+        %td
+        %td
+        %td= f.submit :value => "Submit"

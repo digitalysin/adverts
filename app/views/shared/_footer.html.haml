@@ -1,0 +1,23 @@
+.footer
+  .center
+    .footerarea
+      %ul
+        %li= link_to "HOME", root_url
+        %li= link_to "PASANG IKLAN BARIS", advertisements_url
+        %li= link_to "PASANG BANNER", banners_url
+        %li= link_to "PASANG LINK", links_url
+        %li= link_to "HUBUNGI KAMI", contacts_url
+        - Page.regular_pages.each do |page|
+          %li= link_to page.title.upcase, page_path(page.slug)
+      .copy
+        %strong Copyright &copy; 2007-2008. IklanRaksasa.com. All right reserved.
+        Content dari website ini merupakan kontribusi dari para pemasang iklan.
+        Isi iklan merupakan tanggung jawab pemasang iklan. 
+        Dimohon untuk berhati-hati sebelum menindaklanjuti iklan yang Anda minati.     
+        
+#xnews{:style => "z-index:100000"}
+  %div{:style => "width:95%;padding-right:4px"}
+    %marquee
+      - News.where(:enabled => true).each do |news|
+        = link_to news.title, :controller => :news, :slug => news.slug if news.slug.present?
+        |

@@ -1,0 +1,17 @@
+- div_class = ""
+- if @advertisement.present?
+  - @advertisements.each do |adv|
+    - if adv.advertisement_type.name == "Iklan Premium"
+      - div_class = "premium"
+    - else
+      - div_class = ""
+    %div{:class => "contentleft #{div_class}"}
+      %h1
+        = link_to adv.title, adv.site, :target => :_blank
+      .tgl= adv.created_at.strftime("%d, %B %Y") + " | Dibaca " + adv.times_readed.to_s + " kali"
+      .desc
+        = image_tag adv.image_url(:thumb)
+        = truncate adv.content.html_safe, :length => 200
+      .labelnya= adv.advertisement_type.name.gsub("-", " ").downcase
+- else
+  %h1.no_result Maaf , Pencarian Tidak Ditemukan

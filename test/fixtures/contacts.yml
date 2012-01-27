@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: Hendra Kartosasmito
+  email: hendra@juicegraphic.com
+  address: jalan pecatu e8 23 surabaya
+  website: http://juicegraphic.com/hendra
+  phone: 081-123-456-789
+  message: woow, nice site
+  message_status: false
+  message_send_at: 2011-10-22 10:55:01
+
+two:
+  name: anonymouse
+  email: not_valid_email_address
+  address: somewhere in the world
+  website: http://localhost
+  phone: 123-456-789
+  message: sucks !!!
+  message_status: false
+  message_send_at: 2011-10-22 10:55:01

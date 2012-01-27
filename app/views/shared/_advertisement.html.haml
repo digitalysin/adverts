@@ -1,0 +1,20 @@
+- Advertisement.premium_ads.each do |ads|
+  .contentleft.premium
+    %h1
+      = link_to ads.title, advertisement_path(ads.slug), :target => :_blank, :class => :date
+    .tgl= ads.created_at.strftime("%d, %B %Y")
+    .desc
+      = image_tag ads.image_url(:thumb)
+      = truncate(ads.content.html_safe, :length => 200)
+    .labelnya Iklan Premium
+    
+- Advertisement.free_ads.each do |ads|
+  .contentleft
+    %h1
+      = link_to ads.title, advertisement_path(ads.slug), :target => :_blank, :class => :date
+    .tgl= ads.created_at.strftime("%d, %B %Y")
+    .desc
+      = image_tag ads.image_url(:thumb)
+      = truncate(ads.content.html_safe, :length => 200)
+    .labelnya Iklan Gratis
+      

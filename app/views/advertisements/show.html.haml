@@ -1,0 +1,38 @@
+- div_class = ""
+- if @advertisement.advertisement_type.name == "Iklan Premium"
+  - div_class = "premium"
+%div{:class => "contentleft #{div_class}"}
+  %h1
+    = link_to @advertisement.title, @advertisement.site, :target => :_blank
+  .tgl= @advertisement.created_at.strftime("%d, %B %Y") + " | Dibaca " + @advertisement.times_readed.to_s + " kali"
+  .desc
+    = image_tag @advertisement.image_url(:thumb)
+    = @advertisement.content.html_safe
+  .labelnya= @advertisement.advertisement_type.name.gsub("-", " ").downcase
+  
+  %div
+    Dikirim oleh
+    %span.bold= "#{@advertisement.name} - #{@advertisement.city}"
+    %br
+    = link_to "Kunjungi website", @advertisement.site, :target => :_blank, :class => :bold
+    %br
+    %br
+    %table
+      %tr
+        %td
+          %span.bold Kategori Iklan
+        %td 
+          %span.bold :
+        %td
+          %span.bold= link_to @advertisement.advertisement_category.name, category_index_path(@advertisement.advertisement_category.slug)
+
+.related_ads IKLAN TERKAIT
+- AdvertisementCategory.find(@advertisement.advertisement_category.id).advertisements.each do |ads|
+  .related_ads_content
+    .related_ads_title
+      = link_to ads.title, advertisement_path(ads.slug)
+    %div
+      = truncate(ads.content.html_safe, :length => 200)
+  
+    
+    

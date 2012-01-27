@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  confirmation_email: MyText
+  regular_email: MyText
+  activation_email: MyText
+  deactivation_email: MyString
+  model_for: MyString
+
+two:
+  confirmation_email: MyText
+  regular_email: MyText
+  activation_email: MyText
+  deactivation_email: MyString
+  model_for: MyString

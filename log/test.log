@@ -1,0 +1,878 @@
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world-2') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'MyString') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "site_configurations" WHERE 1=1[0m
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "site_configurations" WHERE 1=1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "site_configurations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "site_configurations" WHERE 1=1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "site_configurations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "site_configurations" WHERE 1=1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "site_configurations"
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "site_configurations" WHERE 1=1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "site_configurations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "site_configurations" WHERE 1=1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "site_configurations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM "site_configurations" WHERE 1=1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "site_configurations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (2.7ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.9ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.5ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.6ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (69.6ms)
+Rendered contacts/index.html.haml within layouts/application (212.6ms)
+Completed 200 OK in 268ms (Views: 247.4ms | ActiveRecord: 3.7ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (74.0ms)
+Completed 200 OK in 169ms (Views: 168.3ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Rendered contacts/_form.html.haml (21.6ms)
+Completed 200 OK in 108ms (Views: 106.9ms | ActiveRecord: 0.0ms)
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (43.3ms)
+Rendered contacts/index.html.haml within layouts/application (121.4ms)
+Completed 200 OK in 266ms (Views: 126.6ms | ActiveRecord: 1.6ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (15.0ms)
+Completed 200 OK in 80ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Rendered contacts/_form.html.haml (18.2ms)
+Completed 200 OK in 84ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (43.2ms)
+Rendered contacts/index.html.haml within layouts/application (120.8ms)
+Completed 200 OK in 270ms (Views: 126.1ms | ActiveRecord: 5.9ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (15.5ms)
+Completed 200 OK in 78ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Rendered contacts/_form.html.haml (15.3ms)
+Completed 200 OK in 85ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (43.6ms)
+Rendered contacts/index.html.haml within layouts/application (122.1ms)
+Completed 200 OK in 269ms (Views: 127.3ms | ActiveRecord: 1.7ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (18.7ms)
+Completed 200 OK in 84ms (Views: 83.6ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Rendered contacts/_form.html.haml (16.7ms)
+Completed 200 OK in 92ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (44.0ms)
+Rendered contacts/index.html.haml within layouts/application (134.6ms)
+Completed 200 OK in 293ms (Views: 140.0ms | ActiveRecord: 2.5ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (20.7ms)
+Completed 200 OK in 135ms (Views: 134.5ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 3ms
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (44.0ms)
+Rendered contacts/index.html.haml within layouts/application (120.0ms)
+Completed 200 OK in 268ms (Views: 125.1ms | ActiveRecord: 1.6ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (16.4ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (44.8ms)
+Rendered contacts/index.html.haml within layouts/application (122.6ms)
+Completed 200 OK in 277ms (Views: 129.0ms | ActiveRecord: 1.6ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (16.7ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (46.5ms)
+Rendered contacts/index.html.haml within layouts/application (124.2ms)
+Completed 200 OK in 276ms (Views: 129.6ms | ActiveRecord: 1.7ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (17.3ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (42.1ms)
+Rendered contacts/index.html.haml within layouts/application (121.9ms)
+Completed 200 OK in 270ms (Views: 127.1ms | ActiveRecord: 1.6ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (15.5ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (43.0ms)
+Rendered contacts/index.html.haml within layouts/application (121.4ms)
+Completed 200 OK in 274ms (Views: 126.5ms | ActiveRecord: 1.8ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (16.2ms)
+Completed 200 OK in 79ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (40.7ms)
+Rendered contacts/index.html.haml within layouts/application (122.5ms)
+Completed 200 OK in 270ms (Views: 128.0ms | ActiveRecord: 1.6ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (15.1ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (40.4ms)
+Rendered contacts/index.html.haml within layouts/application (118.9ms)
+Completed 200 OK in 267ms (Views: 124.0ms | ActiveRecord: 1.6ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (15.0ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+  Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (44.4ms)
+Rendered contacts/index.html.haml within layouts/application (132.5ms)
+Completed 200 OK in 288ms (Views: 137.8ms | ActiveRecord: 2.0ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (15.0ms)
+Completed 200 OK in 80ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (41.2ms)
+Rendered contacts/index.html.haml within layouts/application (118.7ms)
+Completed 200 OK in 135ms (Views: 124.7ms | ActiveRecord: 4.0ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (61.5ms)
+Completed 200 OK in 124ms (Views: 123.4ms | ActiveRecord: 0.0ms)
+  [1m[35mLinkPrice Load (0.3ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM "site_configurations" WHERE 1=1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "site_configurations"
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLinkPrice Load (0.2ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLinkPrice Load (0.2ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLinkPrice Load (0.2ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLinkPrice Load (0.2ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLinkPrice Load (0.2ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLinkPrice Load (0.2ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLinkPrice Load (0.2ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLinkPrice Load (0.2ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:31:54.995022' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:32:48.162353' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:33:09.012349' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.5ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:33:53.641091' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:33:59.162885' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:34:08.857455' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:34:20.734227' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:34:40.126675' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:35:01.296152' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:35:08.632523' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:35:15.171429' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (1.1ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:37:33.248865' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (71.9ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:39:35.593493' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:39:53.833918' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:40:20.262619' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:40:30.293460' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.7ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:40:47.318076' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "links" SET "email" = 'invalid_email', "updated_at" = '2011-10-23 03:42:53.932873' WHERE "links"."id" = 980190962
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (41.2ms)
+Rendered contacts/index.html.haml within layouts/application (123.5ms)
+Completed 200 OK in 143ms (Views: 129.5ms | ActiveRecord: 3.9ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (63.5ms)
+Completed 200 OK in 131ms (Views: 130.6ms | ActiveRecord: 0.0ms)
+  [1m[35mLinkPrice Load (0.3ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "site_configurations" WHERE 1=1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "site_configurations"
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.5ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 298486374 LIMIT 1[0m
+  Processing by ContactsController#create as HTML
+Rendered contacts/_form.html.haml (42.2ms)
+Rendered contacts/index.html.haml within layouts/application (121.4ms)
+Completed 200 OK in 139ms (Views: 127.5ms | ActiveRecord: 5.6ms)
+  Processing by ContactsController#index as HTML
+Rendered contacts/_form.html.haml (62.6ms)
+Completed 200 OK in 126ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+  [1m[35mLinkPrice Load (0.3ms)[0m  SELECT "link_prices".* FROM "link_prices" WHERE "link_prices"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.2ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = '') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "pages" WHERE ("pages"."slug" = 'hello-world') AND ("pages".id <> 980190962) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM "site_configurations" WHERE 1=1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "site_configurations"[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1[0m
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 980190962 LIMIT 1

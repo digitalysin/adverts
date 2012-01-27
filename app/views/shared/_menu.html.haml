@@ -1,0 +1,11 @@
+.menu
+  %ul
+    %li{:class => current_page == "home" ? "active" : ""}= link_to "HOME", root_url
+    %li{:class => current_page == "advertisement" ? "active" : ""}= link_to "PASANG IKLAN BARIS", advertisements_url
+    %li{:class => current_page == "banner" ? "active" : ""}= link_to "PASANG BANNER", banners_url
+    %li{:class => current_page == "link" ? "active" : ""}= link_to "PASANG LINK", links_url
+    %li{:class => current_page == "contact" ? "active" : ""}= link_to "HUBUNGI KAMI", contacts_url
+    %li
+      = form_tag search_url, :method => "get" do
+        = text_field_tag :query
+        = submit_tag "search"
