@@ -1,157 +1,422 @@
 
 --- 
-contacts: 
+admin_users: 
   columns: 
   - id
-  - name
   - email
-  - address
-  - website
-  - phone
-  - message
-  - message_status
-  - message_send_at
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
   - created_at
   - updated_at
   records: 
   - - 1
-    - John Petrucci
-    - john@dreamtheater.net
-    - newyork
-    - http://dreamtheater.net
-    - "12345"
-    - cool site, may i have one ?
-    - false
+    - admin@example.com
+    - $2a$10$bQ8Fr.o.4Kp.Xk.ZretYPu4DzmpnVyLtev/11tzurWgjE2OQLumwa
     - 
-    - 2012-01-24 04:47:02.784699
-    - 2012-01-24 07:21:02.731892
+    - 
+    - 
+    - 13
+    - 2012-01-26 12:03:25 Z
+    - 2012-01-26 11:59:13 Z
+    - 127.0.0.1
+    - 127.0.0.1
+    - 2012-01-22 11:24:00 Z
+    - 2012-01-26 12:03:25 Z
 
 --- 
-pages: 
-  columns: 
-  - id
-  - title
-  - content
-  - slug
-  - meta_keyword
-  - meta_content
-  - enabled
-  - model_for
-  - created_at
-  - updated_at
-  records: 
-  - - 1
-    - contact us if you need us
-    - "<p style=\"text-align: justify;\"><strong style=\"font-weight: bold;\">Hubungi Kami</strong> <br /> Anda dapat menghubungi kami pada alamat :&nbsp; IklanRaksasa.com <br /> Anda juga dapat menghubungi kami dengan mengisi form di bawah ini.  Kami akan dengan senang hati menjawab pertanyaan dan komentar anda.</p>"
-    - contact-us
-    - ""
-    - ""
-    - true
-    - contact
-    - 2012-01-22 03:48:49.372738
-    - 2012-01-23 06:05:34.915112
-  - - 2
-    - Pasang iklan link
-    - |-
-      <p><span style="font-size: small;"><strong style="font-weight: bold;">Pasang Iklan Link</strong></span><br /><span style="font-size: small;"> Silahkan lengakapi form di bawah ini untuk melakukan order  pemasangan link. Dengan memasang iklan link di website kami , dapat meningkatkan traffice website anda. </span><br /> <br /><span style="font-size: small;"><strong style="font-weight: bold;">Bank Transfer</strong> <strong style="font-weight: bold;">Bank Negara Indonesia (BNI)</strong> a.n. <strong style="font-weight: bold;">MEGA ARIYANTONO</strong> No. <strong style="font-weight: bold;">Rek. 0132576303</strong> </span><br /> <br /><span style="font-size: small;"> <strong style="font-weight: bold;">PayPal</strong> <strong style="font-weight: bold;">Akun: ega.naval@gmail.com</strong> </span></p>
-      <ul>
-      <li><span style="font-size: small;">Iklan Premium: $4/bln</span></li>
-      <li><span style="font-size: small;">Iklan Link: $2/bln</span></li>
-      <li><span style="font-size: small;">Iklan Banner 125x125 A1: $3</span></li>
-      <li><span style="font-size: small;">Iklan Banner 125x125 A2: $2,5</span></li>
-      <li><span style="font-size: small;">Iklan Banner 468x60 header page: $5</span></li>
-      <li><span style="font-size: small;">Iklan Banner 468x60 main page: $4</span></li>
-      <li><span style="font-size: small;">Iklan Banner 300x250 B1: $5</span></li>
-      <li><span style="font-size: small;">Iklan Banner 300x250 B2: $4,5</span></li>
-      </ul>
-      <p><br /><span style="font-size: small;"> <strong style="font-weight: bold;">Konfirmasi</strong> </span><br /><span style="font-size: small;"> Silahkan sms ke <span style="color: #ff0000;"><strong>085726808740</strong></span> dengan format: nama Anda, nama bank  tujuan, jumlah transfer, posisi banner &amp; nama web dimana Anda ingin  memasang iklan. </span><br /><span style="font-size: small;"> Contoh: Sudah transfer Andi, BNI, 50.xxx, sidebar B1, iklanraksasa, mohon segera diaktifkan.</span></p>
-    - pasang-iklan-link
-    - 
-    - 
-    - true
-    - link
-    - 2012-01-22 06:52:59.670774
-    - 2012-01-22 06:52:59.670774
-  - - 3
-    - Pasang iklan banner
-    - |-
-      <h1 class="content-title">Pasang Banner</h1>
-      <p><span style="font-size: small;">Silahkan lengakapi form di bawah ini untuk melakukan  order pemasangan Banner. Sebelum melakukan order, silahkan siapkan  banner yang akan Anda pasang (format yang diijinkan adalah .jpg, .png,  .gif dan .swf) sesuai ukuran yang Anda pesan.</span></p>
-      <p><span style="font-size: small;"><strong>Ketentuan</strong>:</span><br /><span style="font-size: small;"> - Banner tidak  mengandung unsur  SARA  dan  Pornografi</span><br /><span style="font-size: small;"> - Isi Banner menjadi tanggung jawab pemasang banner.</span></p>
-      <p><span style="font-size: small;"><strong>Bank Transfer</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb<p;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Bank Negara Indonesia (BNI)</span><br /><span style="font-size: small;"> a.n. MEGA ARIYANTONO</span><br /><span style="font-size: small;"> No. Rek. 0132576303</span></p><p><span style="font-size: small;">&nbsp;Bank Mandiri</span><br /><span style="font-size: small;"> a.n. MEGA ARIYANTONO</span><br /><span style="font-size: small;"> no. Rek.</span><br /> <br /><span style="font-size: small;"> Bank BCA</span><br /><span style="font-size: small;"> a.n. MEGA ARIYANTONO</span><br /><span style="font-size: small;"> no. Rek.</span><br /> <br /><span style="font-size: small;"> PayPal</span><br /><span style="font-size: small;"> Akun: ega.naval@gmail.com</span><br /><span style="font-size: small;"> Iklan Premium: $4/bln</span><br /><span style="font-size: small;"> Iklan Link: $2/bln</span><br /><span style="font-size: small;"> Iklan Banner 125x125 A1: $3</span><br /><span style="font-size: small;"> Iklan Banner 125x125 A2: $2,5</span><br /><span style="font-size: small;"> Iklan Banner 468x60 header page: $5</span><br /><span style="font-size: small;"> Iklan Banner 468x60 main page: $4</span><br /><span style="font-size: small;"> Iklan Banner 300x250 B1: $5</span><br /><span style="font-size: small;"> Iklan Banner 300x250 B2: $4,5</span></p>
-      <p><span style="font-size: small;"><strong>Konfirmasi&nbsp;</strong></span></p>
-      <p><span style="font-size: small;"><strong></strong> Silahkan sms ke 085726808740 dengan format: nama Anda, nama bank  tujuan, jumlah transfer, posisi banner &amp; nama web dimana Anda ingin    memasang iklan.</span></p>
-      <p><span style="font-size: small;">Contoh: Sudah transfer Andi, BNI,  50.xxx, sidebar B1, iklanraksasa, mohon segera diaktifkan.</span></p>
-    - pasang-iklan-banner
-    - 
-    - 
-    - true
-    - banner
-    - 2012-01-22 06:56:34.739836
-    - 2012-01-22 06:59:51.380327
-  - - 4
-    - Pasang Iklan Baris
-    - |-
-      <p><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong>Content</strong> dari website ini merupakan <strong>kontribusi</strong> dari para <strong>pemasang iklan</strong>. </span></p>
-      <p><span style="font-size: small; font-family: arial,helvetica,sans-serif;">Isi  iklan merupakan tanggung jawab pemasang iklan. </span></p>
-      <p><span style="font-size: small; font-family: arial,helvetica,sans-serif;">Dimohon untuk  berhati-hati sebelum menindaklanjuti iklan yang Anda minati. 123</span><span style="text-decoration: underline;"><span style="font-size: medium;"><strong></strong></span></span></p>
-    - pasang-iklan-baris
-    - ""
-    - ""
-    - true
-    - advertisement
-    - 2012-01-22 08:40:26.541597
-    - 2012-01-23 06:04:21.397520
-  - - 5
-    - download
-    - all downloadable free stuff goes here
-    - download
-    - ""
-    - ""
-    - true
-    - 
-    - 2012-01-25 06:11:28.168003
-    - 2012-01-25 06:22:50.027806
-
---- 
-networks: 
+advertisement_categories: 
   columns: 
   - id
   - name
-  - site
+  - enabled
+  - category_id
+  - created_at
+  - updated_at
+  - slug
+  records: 
+  - - 1
+    - Aneka
+    - true
+    - 
+    - 2012-01-22 05:21:41 Z
+    - 2012-01-25 04:22:02 Z
+    - aneka
+  - - 2
+    - Alat Kantor
+    - true
+    - 1
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - alat-kantor
+  - - 3
+    - Alat Rumah Tangga
+    - true
+    - 1
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - alat-rumah-tangga
+  - - 4
+    - Busana Fashion
+    - true
+    - 1
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - busana-fashion
+  - - 5
+    - Jam & Perhiasan
+    - true
+    - 1
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - jam-perhiasan
+  - - 6
+    - Kesehatan & Pengobatan
+    - true
+    - 1
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - kesehatan-pengobatan
+  - - 7
+    - Elektronika
+    - true
+    - 
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - elektronika
+  - - 8
+    - Digital Camera
+    - true
+    - 8
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - digital-camera
+  - - 9
+    - Home Appliance
+    - true
+    - 8
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - home-appliance
+  - - 10
+    - HP & Telecom
+    - true
+    - 8
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - hp-telecom
+  - - 11
+    - Media Player
+    - true
+    - 8
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - media-player
+  - - 12
+    - Internet
+    - true
+    - 
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - internet
+  - - 13
+    - Free Service
+    - true
+    - 12
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - free-service
+  - - 14
+    - Hosting & Domain
+    - true
+    - 12
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - hosting-domain
+  - - 15
+    - Modem
+    - true
+    - 12
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - modem
+  - - 16
+    - Warnet - Rental
+    - true
+    - 12
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - warnet-rental
+  - - 17
+    - Kendaraan
+    - true
+    - 
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - kendaraan
+  - - 18
+    - Aksesoris Kendaraan
+    - true
+    - 17
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - aksesoris-kendaraan
+  - - 19
+    - Alat Berat
+    - true
+    - 17
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - alat-berat
+  - - 20
+    - Mobil
+    - true
+    - 17
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - mobil
+  - - 21
+    - Rental
+    - true
+    - 17
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - rental
+  - - 22
+    - Komputer
+    - true
+    - 
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - komputer
+  - - 23
+    - Hardware
+    - true
+    - 22
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - hardware
+  - - 24
+    - NoteBook
+    - true
+    - 22
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - notebook
+  - - 25
+    - Software
+    - true
+    - 22
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - software
+  - - 26
+    - Lowongan Kerja & Bisnis
+    - true
+    - 
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - lowongan-kerja-bisnis
+  - - 27
+    - Agrobisnis
+    - true
+    - 26
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - agrobisnis
+  - - 28
+    - Bisnis Online
+    - true
+    - 26
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - bisnis-online
+  - - 29
+    - Kerajinan
+    - true
+    - 26
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - kerajinan
+  - - 30
+    - MLM
+    - true
+    - 26
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - mlm
+  - - 31
+    - Properti
+    - true
+    - 
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - properti
+  - - 32
+    - Arsitektur
+    - true
+    - 31
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - arsitektur
+  - - 33
+    - Dijual Rumah & Tanah
+    - true
+    - 31
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - dijual-rumah-tanah
+  - - 34
+    - Indekost
+    - true
+    - 31
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - indekost
+  - - 35
+    - Wisata
+    - true
+    - 
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - wisata
+  - - 36
+    - Hotel & Penginapan
+    - true
+    - 35
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - hotel-penginapan
+  - - 37
+    - Kuliner
+    - true
+    - 35
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - kuliner
+  - - 38
+    - Tempat Wisata
+    - true
+    - 35
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - tempat-wisata
+  - - 39
+    - Tour & Travel
+    - true
+    - 35
+    - 2012-01-22 05:22:33 Z
+    - 2012-01-25 04:22:02 Z
+    - tour-travel
+
+--- 
+advertisement_prices: 
+  columns: 
+  - id
+  - name
+  - price
   - enabled
   - created_at
   - updated_at
-  - network_type
   records: 
   - - 1
-    - smasing magazine
-    - http://smashingmagazine.com
+    - 1 Bulan Rp 200000
+    - 200000.0
     - true
-    - 2012-01-22 03:20:01.537150
-    - 2012-01-22 03:26:07.808654
-    - site
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
   - - 2
-    - planetrubyonrails
-    - http://planetrubyonrails.com
+    - 2 Bulan Rp 400000
+    - 400000.0
     - true
-    - 2012-01-22 03:20:48.409339
-    - 2012-01-22 03:26:07.840580
-    - site
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
   - - 3
-    - Customer Support 1
-    - dump.person
+    - 3 Bulan Rp 600000
+    - 600000.0
     - true
-    - 2012-01-22 03:27:46.020464
-    - 2012-01-24 08:52:48.534121
-    - messenger
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
   - - 4
-    - Customer Support 2
-    - customer_support1
+    - 4 Bulan Rp 800000
+    - 800000.0
     - true
-    - 2012-01-22 03:27:57.943433
-    - 2012-01-22 03:27:57.943433
-    - messenger
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
+  - - 5
+    - 5 Bulan Rp 1000000
+    - 1000000.0
+    - true
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
+  - - 6
+    - 6 Bulan Rp 1200000
+    - 1200000.0
+    - true
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
+  - - 7
+    - 7 Bulan Rp 1400000
+    - 1400000.0
+    - true
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
+  - - 8
+    - 8 Bulan Rp 1600000
+    - 1600000.0
+    - true
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
+  - - 9
+    - 9 Bulan Rp 1800000
+    - 1800000.0
+    - true
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
+  - - 10
+    - 10 Bulan Rp 2000000
+    - 2000000.0
+    - true
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
+  - - 11
+    - 11 Bulan Rp 2200000
+    - 2200000.0
+    - true
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
+  - - 12
+    - 12 Bulan Rp 2400000
+    - 2400000.0
+    - true
+    - 2012-01-22 05:28:20 Z
+    - 2012-01-22 05:28:20 Z
+
+--- 
+advertisement_types: 
+  columns: 
+  - id
+  - name
+  - enabled
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Iklan Gratis
+    - true
+    - 2012-01-22 05:24:12 Z
+    - 2012-01-22 07:33:04 Z
+  - - 2
+    - Iklan Premium
+    - true
+    - 2012-01-22 05:24:19 Z
+    - 2012-01-22 07:33:16 Z
 
 --- 
 advertisements: 
@@ -187,8 +452,8 @@ advertisements:
     - http://obatkuat.com
     - "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet mauris pharetra dui iaculis convallis eget nec ipsum. Suspendisse cursus dui sollicitudin nunc rhoncus at posuere ante tincidunt. "
     - penis besar
-    - 2012-01-24 10:14:31.029745
-    - 2012-01-25 04:35:57.126950
+    - 2012-01-24 10:14:31 Z
+    - 2012-01-25 04:35:57 Z
     - true
     - contohiklan2.jpg
     - 22
@@ -205,8 +470,8 @@ advertisements:
     - http://obatkuat.com
     - "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet mauris pharetra dui iaculis convallis eget nec ipsum. Suspendisse cursus dui sollicitudin nunc rhoncus at posuere ante tincidunt. "
     - penis besar
-    - 2012-01-24 10:16:19.094796
-    - 2012-01-24 17:00:43.890635
+    - 2012-01-24 10:16:19 Z
+    - 2012-01-24 17:00:43 Z
     - true
     - contohiklan3.jpg
     - 13
@@ -223,8 +488,8 @@ advertisements:
     - http://temantapimesra.com
     - Gaul dengan Free Chat, iMessage, Upload & Rate Photos and Comments. Cari Kawan. Dating is all we need. Setelah komunikasi terjalin langsung nge-sex
     - kencan gratis, cewek gratis
-    - 2012-01-24 10:23:08.976266
-    - 2012-01-24 16:21:56.361152
+    - 2012-01-24 10:23:08 Z
+    - 2012-01-24 16:21:56 Z
     - false
     - contohiklan3.jpg
     - 
@@ -241,8 +506,8 @@ advertisements:
     - http://temantapimesra.com
     - "Hati-hati dengan penawaran kencan gratis. Anda bisa-bisa jadi korban pencurian seperti banyak dialami pria hidung belang di Tanjung "
     - kencan gratis, cewek gratis
-    - 2012-01-24 10:26:04.154357
-    - 2012-01-24 16:21:56.418879
+    - 2012-01-24 10:26:04 Z
+    - 2012-01-24 16:21:56 Z
     - true
     - contohiklan2.jpg
     - 
@@ -259,8 +524,8 @@ advertisements:
     - http://temantapimesra.com
     - "DuniaJodoh.com - Situs kencan terbaik di Indonesia | Free & Online Dating : Dating Women & Girls - Best & Girl Friends | Forum"
     - kencan gratis, cewek gratis
-    - 2012-01-24 10:27:03.884004
-    - 2012-01-24 16:21:56.426043
+    - 2012-01-24 10:27:03 Z
+    - 2012-01-24 16:21:56 Z
     - true
     - contohiklan3.jpg
     - 
@@ -277,8 +542,8 @@ advertisements:
     - http://temantapimesra.com
     - "SEPEDA GRATIS. dapet hadiah. BANJAK TERIMA KASIH. DAPET SATOE SEPEDA!!! BELILAH ROKOK TJAP. BAL TIGA. \xE2\x80\x9CSebuah promosi ..."
     - kencan gratis, cewek gratis
-    - 2012-01-24 10:51:24.100874
-    - 2012-01-24 16:21:56.433031
+    - 2012-01-24 10:51:24 Z
+    - 2012-01-24 16:21:56 Z
     - true
     - contohiklan2.jpg
     - 
@@ -296,10 +561,10 @@ advertisements:
     - |-
       TIDAK ANEH KUAT 3 JAMKUAT 3 HARI BARU DAHSYATTTTT.
       100% HERBAL (1KALI MINUM KHASIATNYA BENER-BENER TERASA SAMPAI 3 HARI).POKOKNYA MANTAP BANGET BROTAHAN LAMA DAN BERKALI-KALI.
-      NIKMAT, BERGAIRAH DAN PERKASA. CUKUP MINUM 3HARI SEKALI ON TERUS SETIAP HARI DAN ATASI KEMANDULAN. itulah KOPI CINTA ATAU KOPI SENSITIF(Kandungan Maca, Tribulus dan Panak Ginseng). Minuman Pria dan Wanita yang akan membuat KEHARMONISAN RUMAH TANGGA ANDA.
+      NIKMAT, BERGAIRAH DAN PERKASA. CUKUP MINUM 3HARI SEKALI ON TERUS SETIAP HARI DA
     - kencan gratis, cewek gratis
-    - 2012-01-24 11:03:30.969902
-    - 2012-01-25 04:35:47.832985
+    - 2012-01-24 11:03:30 Z
+    - 2012-01-25 04:35:47 Z
     - true
     - contohiklan2.jpg
     - 8
@@ -314,10 +579,10 @@ advertisements:
     - 1
     - Outbound malang, paintball, airsoftgun, raftin g, arung jeram jawa timur, kasembon rafting malang
     - http://temantapimesra.com
-    - BULAN BAGUS UNTUK OUTBOUND DI MA LANG Executive adventure outbound Malang, Salah satu provider Outbound terbaik hadir untuk anda di Malang. Outing program, outbound, paralayang, indoor training, motivasi training, rafting/arung jeram. Silahkan kontak kami di 081233342777 atau 0341-7027933. Pin BB :2851E420. ATAU silahkan buka web kami www.outboundmalang.com dan www.kasembon-rafting.com
+    - BULAN BAGUS UNTUK OUTBOUND DI MA LANG Executive adventure outbound Malang, Salah satu provider Outbound terbaik hadir untuk anda di Malang. Outing program, outbound, paralayang, indoor training, motivasi training, rafting/arung jeram. Silahkan kontak kami
     - kencan gratis, cewek gratis
-    - 2012-01-24 11:05:00.119483
-    - 2012-01-25 04:35:41.888329
+    - 2012-01-24 11:05:00 Z
+    - 2012-01-25 04:35:41 Z
     - true
     - contohiklan3.jpg
     - 3
@@ -334,8 +599,8 @@ advertisements:
     - http://temantapimesra.com
     - "Jual fire alarm konvensional dan addressable merk CM, hooseki, Nittan dan Siemens. Cocok diaplikasikan untuk rumah, villa, hotel. Informasi le bih detail hubungi *http://ermerah.com* - "
     - kencan gratis, cewek gratis
-    - 2012-01-24 11:06:22.043120
-    - 2012-01-24 16:21:56.456177
+    - 2012-01-24 11:06:22 Z
+    - 2012-01-24 16:21:56 Z
     - false
     - contohiklan3.jpg
     - 
@@ -350,10 +615,10 @@ advertisements:
     - 1
     - "GROW UP SUPER USA PENINGGI BADAN "
     - http://temantapimesra.com
-    - GROW-UP SUPER USA Rp:130,000,- Hub:085646756999 -GROW-UP super USA dari riset America terbuat dari bahan herbal dan juga di rekomendasi kan oleh pakar ahli gizi Untuk mengatasi masalah pembentukan postur tinggi badan Anda secara PROPORSIONAL dan IDEAL GROW-UP adalah obat untuk peninggi badan untuk segala umur, produk ini tercipta dari inovasi
+    - GROW-UP SUPER USA Rp:130,000,- Hub:085646756999 -GROW-UP super USA dari riset America terbuat dari bahan herbal dan juga di rekomendasi kan oleh pakar ahli gizi Untuk mengatasi masalah pembentukan postur tinggi badan Anda secara PROPORSIONAL dan IDEAL GRO
     - kencan gratis, cewek gratis
-    - 2012-01-24 11:07:33.170272
-    - 2012-01-25 04:35:35.478379
+    - 2012-01-24 11:07:33 Z
+    - 2012-01-25 04:35:35 Z
     - true
     - contohiklan2.jpg
     - 3
@@ -370,470 +635,12 @@ advertisements:
     - http://obatkuat.com
     - Kalung import korea dengan desain terbaru dan banyak dipakai artis dengan harga yang terjangkau bisa di beli dengan eceran atau grosir.
     - kencan gratis, cewek gratis
-    - 2012-01-24 11:08:29.333875
-    - 2012-01-24 16:21:56.471004
+    - 2012-01-24 11:08:29 Z
+    - 2012-01-24 16:21:56 Z
     - true
     - contohiklan3.jpg
     - 
     - grosir-kalung-korea-import
-
---- 
-advertisement_types: 
-  columns: 
-  - id
-  - name
-  - enabled
-  - created_at
-  - updated_at
-  records: 
-  - - 1
-    - Iklan Gratis
-    - true
-    - 2012-01-22 05:24:12.159208
-    - 2012-01-22 07:33:04.163031
-  - - 2
-    - Iklan Premium
-    - true
-    - 2012-01-22 05:24:19.961948
-    - 2012-01-22 07:33:16.960817
-
---- 
-advertisement_prices: 
-  columns: 
-  - id
-  - name
-  - price
-  - enabled
-  - created_at
-  - updated_at
-  records: 
-  - - 1
-    - 1 Bulan Rp 200000
-    - 200000.0
-    - true
-    - 2012-01-22 05:28:20.459308
-    - 2012-01-22 05:28:20.459308
-  - - 2
-    - 2 Bulan Rp 400000
-    - 400000.0
-    - true
-    - 2012-01-22 05:28:20.470209
-    - 2012-01-22 05:28:20.470209
-  - - 3
-    - 3 Bulan Rp 600000
-    - 600000.0
-    - true
-    - 2012-01-22 05:28:20.474495
-    - 2012-01-22 05:28:20.474495
-  - - 4
-    - 4 Bulan Rp 800000
-    - 800000.0
-    - true
-    - 2012-01-22 05:28:20.479037
-    - 2012-01-22 05:28:20.479037
-  - - 5
-    - 5 Bulan Rp 1000000
-    - 1000000.0
-    - true
-    - 2012-01-22 05:28:20.484967
-    - 2012-01-22 05:28:20.484967
-  - - 6
-    - 6 Bulan Rp 1200000
-    - 1200000.0
-    - true
-    - 2012-01-22 05:28:20.490679
-    - 2012-01-22 05:28:20.490679
-  - - 7
-    - 7 Bulan Rp 1400000
-    - 1400000.0
-    - true
-    - 2012-01-22 05:28:20.495127
-    - 2012-01-22 05:28:20.495127
-  - - 8
-    - 8 Bulan Rp 1600000
-    - 1600000.0
-    - true
-    - 2012-01-22 05:28:20.499194
-    - 2012-01-22 05:28:20.499194
-  - - 9
-    - 9 Bulan Rp 1800000
-    - 1800000.0
-    - true
-    - 2012-01-22 05:28:20.504597
-    - 2012-01-22 05:28:20.504597
-  - - 10
-    - 10 Bulan Rp 2000000
-    - 2000000.0
-    - true
-    - 2012-01-22 05:28:20.508660
-    - 2012-01-22 05:28:20.508660
-  - - 11
-    - 11 Bulan Rp 2200000
-    - 2200000.0
-    - true
-    - 2012-01-22 05:28:20.514045
-    - 2012-01-22 05:28:20.514045
-  - - 12
-    - 12 Bulan Rp 2400000
-    - 2400000.0
-    - true
-    - 2012-01-22 05:28:20.519494
-    - 2012-01-22 05:28:20.519494
-
---- 
-advertisement_categories: 
-  columns: 
-  - id
-  - name
-  - enabled
-  - category_id
-  - created_at
-  - updated_at
-  - slug
-  records: 
-  - - 1
-    - Aneka
-    - true
-    - 
-    - 2012-01-22 05:21:41.882873
-    - 2012-01-25 04:22:02.403717
-    - aneka
-  - - 2
-    - Alat Kantor
-    - true
-    - 1
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.432152
-    - alat-kantor
-  - - 3
-    - Alat Rumah Tangga
-    - true
-    - 1
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.438492
-    - alat-rumah-tangga
-  - - 4
-    - Busana Fashion
-    - true
-    - 1
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.445975
-    - busana-fashion
-  - - 5
-    - Jam & Perhiasan
-    - true
-    - 1
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.450482
-    - jam-perhiasan
-  - - 6
-    - Kesehatan & Pengobatan
-    - true
-    - 1
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.454610
-    - kesehatan-pengobatan
-  - - 7
-    - Elektronika
-    - true
-    - 
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.459836
-    - elektronika
-  - - 8
-    - Digital Camera
-    - true
-    - 8
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.465524
-    - digital-camera
-  - - 9
-    - Home Appliance
-    - true
-    - 8
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.469522
-    - home-appliance
-  - - 10
-    - HP & Telecom
-    - true
-    - 8
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.473280
-    - hp-telecom
-  - - 11
-    - Media Player
-    - true
-    - 8
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.477776
-    - media-player
-  - - 12
-    - Internet
-    - true
-    - 
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.481520
-    - internet
-  - - 13
-    - Free Service
-    - true
-    - 12
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.486148
-    - free-service
-  - - 14
-    - Hosting & Domain
-    - true
-    - 12
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.493659
-    - hosting-domain
-  - - 15
-    - Modem
-    - true
-    - 12
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.498772
-    - modem
-  - - 16
-    - Warnet - Rental
-    - true
-    - 12
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.504846
-    - warnet-rental
-  - - 17
-    - Kendaraan
-    - true
-    - 
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.510917
-    - kendaraan
-  - - 18
-    - Aksesoris Kendaraan
-    - true
-    - 17
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.515736
-    - aksesoris-kendaraan
-  - - 19
-    - Alat Berat
-    - true
-    - 17
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.520205
-    - alat-berat
-  - - 20
-    - Mobil
-    - true
-    - 17
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.523974
-    - mobil
-  - - 21
-    - Rental
-    - true
-    - 17
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.528167
-    - rental
-  - - 22
-    - Komputer
-    - true
-    - 
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.533191
-    - komputer
-  - - 23
-    - Hardware
-    - true
-    - 22
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.538433
-    - hardware
-  - - 24
-    - NoteBook
-    - true
-    - 22
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.543778
-    - notebook
-  - - 25
-    - Software
-    - true
-    - 22
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.547567
-    - software
-  - - 26
-    - Lowongan Kerja & Bisnis
-    - true
-    - 
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.551704
-    - lowongan-kerja-bisnis
-  - - 27
-    - Agrobisnis
-    - true
-    - 26
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.555700
-    - agrobisnis
-  - - 28
-    - Bisnis Online
-    - true
-    - 26
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.559803
-    - bisnis-online
-  - - 29
-    - Kerajinan
-    - true
-    - 26
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.564685
-    - kerajinan
-  - - 30
-    - MLM
-    - true
-    - 26
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.569511
-    - mlm
-  - - 31
-    - Properti
-    - true
-    - 
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.573180
-    - properti
-  - - 32
-    - Arsitektur
-    - true
-    - 31
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.578236
-    - arsitektur
-  - - 33
-    - Dijual Rumah & Tanah
-    - true
-    - 31
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.582495
-    - dijual-rumah-tanah
-  - - 34
-    - Indekost
-    - true
-    - 31
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.587397
-    - indekost
-  - - 35
-    - Wisata
-    - true
-    - 
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.591706
-    - wisata
-  - - 36
-    - Hotel & Penginapan
-    - true
-    - 35
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.596425
-    - hotel-penginapan
-  - - 37
-    - Kuliner
-    - true
-    - 35
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.601616
-    - kuliner
-  - - 38
-    - Tempat Wisata
-    - true
-    - 35
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.605542
-    - tempat-wisata
-  - - 39
-    - Tour & Travel
-    - true
-    - 35
-    - 2012-01-22 05:22:33.765746
-    - 2012-01-25 04:22:02.609784
-    - tour-travel
-
---- 
-link_prices: 
-  columns: 
-  - id
-  - price
-  - created_at
-  - updated_at
-  - name
-  records: 
-  - - 1
-    - 12000.0
-    - 2012-01-22 06:50:33.851618
-    - 2012-01-22 06:50:33.851618
-    - Harga 1 Bulan Rp. 12000
-  - - 2
-    - 24000.0
-    - 2012-01-22 06:50:34.004113
-    - 2012-01-22 06:50:34.004113
-    - Harga 2 Bulan Rp. 24000
-  - - 3
-    - 36000.0
-    - 2012-01-22 06:50:34.008858
-    - 2012-01-22 06:50:34.008858
-    - Harga 3 Bulan Rp. 36000
-  - - 4
-    - 48000.0
-    - 2012-01-22 06:50:34.014912
-    - 2012-01-22 06:50:34.014912
-    - Harga 4 Bulan Rp. 48000
-  - - 5
-    - 60000.0
-    - 2012-01-22 06:50:34.020572
-    - 2012-01-22 06:50:34.020572
-    - Harga 5 Bulan Rp. 60000
-  - - 6
-    - 72000.0
-    - 2012-01-22 06:50:34.025450
-    - 2012-01-22 06:50:34.025450
-    - Harga 6 Bulan Rp. 72000
-  - - 7
-    - 84000.0
-    - 2012-01-22 06:50:34.029028
-    - 2012-01-22 06:50:34.029028
-    - Harga 7 Bulan Rp. 84000
-  - - 8
-    - 96000.0
-    - 2012-01-22 06:50:34.033785
-    - 2012-01-22 06:50:34.033785
-    - Harga 8 Bulan Rp. 96000
-  - - 9
-    - 108000.0
-    - 2012-01-22 06:50:34.038363
-    - 2012-01-22 06:50:34.038363
-    - Harga 9 Bulan Rp. 108000
-  - - 10
-    - 120000.0
-    - 2012-01-22 06:50:34.042136
-    - 2012-01-22 06:50:34.042136
-    - Harga 10 Bulan Rp. 120000
-  - - 11
-    - 132000.0
-    - 2012-01-22 06:50:34.051786
-    - 2012-01-22 06:50:34.051786
-    - Harga 11 Bulan Rp. 132000
-  - - 12
-    - 144000.0
-    - 2012-01-22 06:50:34.057912
-    - 2012-01-22 06:50:34.057912
-    - Harga 12 Bulan Rp. 144000
 
 --- 
 banner_categories: 
@@ -849,32 +656,32 @@ banner_categories:
     - Header Page (468x60)
     - 500000.0
     - true
-    - 2012-01-22 07:12:07.604873
-    - 2012-01-22 07:12:07.604873
+    - 2012-01-22 07:12:07 Z
+    - 2012-01-22 07:12:07 Z
   - - 2
     - B1 - Dibawah Header Page (125x125)
     - 300000.0
     - true
-    - 2012-01-22 07:12:30.258582
-    - 2012-01-22 07:14:50.650284
+    - 2012-01-22 07:12:30 Z
+    - 2012-01-22 07:14:50 Z
   - - 3
     - B2 - Diatas Iklan Premium (468x60)
     - 400000.0
     - true
-    - 2012-01-22 07:12:59.896061
-    - 2012-01-22 07:12:59.896061
+    - 2012-01-22 07:12:59 Z
+    - 2012-01-22 07:12:59 Z
   - - 4
     - B3 - Ditengah (160)
     - 350000.0
     - true
-    - 2012-01-22 07:13:18.114771
-    - 2012-01-22 07:13:18.114771
+    - 2012-01-22 07:13:18 Z
+    - 2012-01-22 07:13:18 Z
   - - 5
     - B4 - Disebelah Kanan (300x250)
     - 450000.0
     - true
-    - 2012-01-22 07:13:37.419307
-    - 2012-01-22 07:13:37.419307
+    - 2012-01-22 07:13:37 Z
+    - 2012-01-22 07:13:37 Z
 
 --- 
 banners: 
@@ -900,8 +707,8 @@ banners:
     - 1
     - http://vectorgraphic.com
     - this is content
-    - 2012-01-22 09:12:56.944613
-    - 2012-01-24 08:19:06.357477
+    - 2012-01-22 09:12:56 Z
+    - 2012-01-24 08:19:06 Z
     - image.png
     - true
   - - 3
@@ -912,8 +719,8 @@ banners:
     - 1
     - http://deviantart.com
     - this is for content
-    - 2012-01-24 07:48:39.928058
-    - 2012-01-24 08:18:34.330141
+    - 2012-01-24 07:48:39 Z
+    - 2012-01-24 08:18:34 Z
     - iklan300.jpg
     - true
   - - 4
@@ -924,8 +731,8 @@ banners:
     - 1
     - http://telkomsel.com
     - this is for content
-    - 2012-01-24 07:52:13.236223
-    - 2012-01-24 07:52:13.236223
+    - 2012-01-24 07:52:13 Z
+    - 2012-01-24 07:52:13 Z
     - telkomsel.gif
     - true
   - - 5
@@ -936,8 +743,8 @@ banners:
     - 2
     - http://startpoint.com
     - this is for content
-    - 2012-01-24 07:56:04.244649
-    - 2012-01-24 07:56:04.244649
+    - 2012-01-24 07:56:04 Z
+    - 2012-01-24 07:56:04 Z
     - start.jpg
     - true
   - - 6
@@ -948,8 +755,8 @@ banners:
     - 7
     - http://casio.com
     - this is for content
-    - 2012-01-24 08:14:15.227430
-    - 2012-01-24 08:14:15.227430
+    - 2012-01-24 08:14:15 Z
+    - 2012-01-24 08:14:15 Z
     - casio-gshock-gw9200.jpg
     - true
   - - 7
@@ -960,8 +767,8 @@ banners:
     - 2
     - http://apple.com
     - this is content
-    - 2012-01-24 08:32:00.099629
-    - 2012-01-24 08:32:00.099629
+    - 2012-01-24 08:32:00 Z
+    - 2012-01-24 08:32:00 Z
     - overview_new1_20110426.png
     - true
   - - 8
@@ -972,8 +779,8 @@ banners:
     - 1
     - http://apple.com
     - this is content
-    - 2012-01-24 08:34:38.241591
-    - 2012-01-24 08:36:37.941786
+    - 2012-01-24 08:34:38 Z
+    - 2012-01-24 08:36:37 Z
     - macbook-pro.jpg
     - true
   - - 9
@@ -984,8 +791,8 @@ banners:
     - 1
     - http://car.com
     - this is content
-    - 2012-01-24 08:39:28.352821
-    - 2012-01-24 08:39:28.352821
+    - 2012-01-24 08:39:28 Z
+    - 2012-01-24 08:39:28 Z
     - 110403_125X125.gif
     - true
   - - 10
@@ -996,8 +803,8 @@ banners:
     - 1
     - http://bike.com
     - this is for content
-    - 2012-01-24 08:42:19.763008
-    - 2012-01-24 08:42:19.763008
+    - 2012-01-24 08:42:19 Z
+    - 2012-01-24 08:42:19 Z
     - BikeBling-125px-ad1.gif
     - true
   - - 11
@@ -1008,8 +815,8 @@ banners:
     - 1
     - http://health.com
     - this is for content
-    - 2012-01-24 08:44:55.886146
-    - 2012-01-24 08:44:55.886146
+    - 2012-01-24 08:44:55 Z
+    - 2012-01-24 08:44:55 Z
     - health___medicines_400.jpg
     - true
   - - 12
@@ -1020,8 +827,8 @@ banners:
     - 1
     - http://customercare.com
     - this is for content
-    - 2012-01-24 08:47:41.547994
-    - 2012-01-24 08:47:41.547994
+    - 2012-01-24 08:47:41 Z
+    - 2012-01-24 08:47:41 Z
     - voteaward-best-customer-service1.gif
     - true
   - - 13
@@ -1032,8 +839,8 @@ banners:
     - 1
     - http://indonesia.gov
     - this is for content
-    - 2012-01-24 09:00:18.519022
-    - 2012-01-24 09:58:07.038123
+    - 2012-01-24 09:00:18 Z
+    - 2012-01-24 09:58:07 Z
     - standard-banner-468-x-60-px.png
     - true
   - - 14
@@ -1044,8 +851,8 @@ banners:
     - 1
     - http://distrowatch.com
     - this is for content
-    - 2012-01-24 09:17:11.186948
-    - 2012-01-24 09:17:11.186948
+    - 2012-01-24 09:17:11 Z
+    - 2012-01-24 09:17:11 Z
     - DistroWatch_Logo.png
     - true
   - - 15
@@ -1056,8 +863,8 @@ banners:
     - 1
     - http://footactionusa.com
     - this is for content
-    - 2012-01-24 09:22:27.028696
-    - 2012-01-24 09:22:27.028696
+    - 2012-01-24 09:22:27 Z
+    - 2012-01-24 09:22:27 Z
     - FA_logo_468x60.gif
     - true
   - - 16
@@ -1068,8 +875,8 @@ banners:
     - 1
     - http://paypal.com
     - this is for content
-    - 2012-01-24 09:24:08.098711
-    - 2012-01-24 09:24:08.098711
+    - 2012-01-24 09:24:08 Z
+    - 2012-01-24 09:24:08 Z
     - logo1_verified.gif
     - true
   - - 17
@@ -1080,8 +887,8 @@ banners:
     - 1
     - http://bikestyletours.com
     - this is for content
-    - 2012-01-24 09:30:02.989303
-    - 2012-01-24 09:30:02.989303
+    - 2012-01-24 09:30:02 Z
+    - 2012-01-24 09:30:02 Z
     - 2005-bikestyle-tours-logo-text-only22.jpg
     - true
   - - 18
@@ -1092,8 +899,8 @@ banners:
     - 1
     - http://managerleague.com
     - this is for content
-    - 2012-01-24 09:35:21.716976
-    - 2012-01-24 09:35:21.716976
+    - 2012-01-24 09:35:21 Z
+    - 2012-01-24 09:35:21 Z
     - B7_Green_logo.jpg
     - true
   - - 19
@@ -1104,8 +911,8 @@ banners:
     - 1
     - http://learningchocolate.com
     - this is for content
-    - 2012-01-24 09:38:35.209574
-    - 2012-01-24 09:38:35.209574
+    - 2012-01-24 09:38:35 Z
+    - 2012-01-24 09:38:35 Z
     - logoLearningChocolate_468x60_en.gif
     - true
   - - 20
@@ -1116,8 +923,8 @@ banners:
     - 1
     - http://speedcult.com
     - this is for content
-    - 2012-01-24 09:40:43.692544
-    - 2012-01-24 09:40:43.692544
+    - 2012-01-24 09:40:43 Z
+    - 2012-01-24 09:40:43 Z
     - SC_KustomLogo_468x60.gif
     - true
   - - 21
@@ -1128,8 +935,8 @@ banners:
     - 1
     - http://lunatic.com
     - this is for content
-    - 2012-01-24 09:43:18.066636
-    - 2012-01-24 09:43:18.066636
+    - 2012-01-24 09:43:18 Z
+    - 2012-01-24 09:43:18 Z
     - logo-temp1.gif
     - true
   - - 22
@@ -1140,8 +947,8 @@ banners:
     - 1
     - http://showcase.com
     - this is for content
-    - 2012-01-24 09:46:27.512996
-    - 2012-01-24 09:46:27.512996
+    - 2012-01-24 09:46:27 Z
+    - 2012-01-24 09:46:27 Z
     - logo2.jpg
     - true
   - - 23
@@ -1152,41 +959,237 @@ banners:
     - 1
     - http://nophindahoz.com
     - this is for content
-    - 2012-01-24 09:50:20.235436
-    - 2012-01-24 09:50:20.235436
+    - 2012-01-24 09:50:20 Z
+    - 2012-01-24 09:50:20 Z
     - NophindahozLogo.gif
     - true
+  - - 24
+    - Hendra Kartasasmita
+    - digitalysin@gmail.com
+    - 0341-123456
+    - 2
+    - 1
+    - http://hendra.com
+    - this is for content
+    - 2012-01-25 17:01:33 Z
+    - 2012-01-25 17:01:33 Z
+    - widescreen__2_.jpg
+    - false
 
 --- 
-admin_users: 
+contacts: 
   columns: 
   - id
+  - name
   - email
-  - encrypted_password
-  - reset_password_token
-  - reset_password_sent_at
-  - remember_created_at
-  - sign_in_count
-  - current_sign_in_at
-  - last_sign_in_at
-  - current_sign_in_ip
-  - last_sign_in_ip
+  - address
+  - website
+  - phone
+  - message
+  - message_status
+  - message_send_at
   - created_at
   - updated_at
   records: 
   - - 1
-    - admin@example.com
-    - $2a$10$bQ8Fr.o.4Kp.Xk.ZretYPu4DzmpnVyLtev/11tzurWgjE2OQLumwa
+    - John Petrucci
+    - john@dreamtheater.net
+    - newyork
+    - http://dreamtheater.net
+    - "12345"
+    - cool site, may i have one ?
+    - false
     - 
+    - 2012-01-24 04:47:02 Z
+    - 2012-01-24 07:21:02 Z
+
+--- 
+link_prices: 
+  columns: 
+  - id
+  - price
+  - created_at
+  - updated_at
+  - name
+  records: 
+  - - 1
+    - 12000.0
+    - 2012-01-22 06:50:33 Z
+    - 2012-01-22 06:50:33 Z
+    - Harga 1 Bulan Rp. 12000
+  - - 2
+    - 24000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 2 Bulan Rp. 24000
+  - - 3
+    - 36000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 3 Bulan Rp. 36000
+  - - 4
+    - 48000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 4 Bulan Rp. 48000
+  - - 5
+    - 60000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 5 Bulan Rp. 60000
+  - - 6
+    - 72000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 6 Bulan Rp. 72000
+  - - 7
+    - 84000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 7 Bulan Rp. 84000
+  - - 8
+    - 96000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 8 Bulan Rp. 96000
+  - - 9
+    - 108000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 9 Bulan Rp. 108000
+  - - 10
+    - 120000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 10 Bulan Rp. 120000
+  - - 11
+    - 132000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 11 Bulan Rp. 132000
+  - - 12
+    - 144000.0
+    - 2012-01-22 06:50:34 Z
+    - 2012-01-22 06:50:34 Z
+    - Harga 12 Bulan Rp. 144000
+
+--- 
+links: 
+  columns: 
+  - id
+  - anchor
+  - website
+  - link_price_id
+  - name
+  - email
+  - phone
+  - created_at
+  - updated_at
+  - enabled
+  records: 
+  - - 1
     - 
-    - 
-    - 7
-    - 2012-01-25 06:09:39.966708
-    - 2012-01-24 15:51:10.576800
-    - 127.0.0.1
-    - 127.0.0.1
-    - 2012-01-22 11:24:00.362104
-    - 2012-01-25 06:09:39.967577
+    - http://rubysource.com
+    - 1
+    - Ruby Source
+    - digitalysin@gmail.com
+    - 0341-123456
+    - 2012-01-26 12:46:50 Z
+    - 2012-01-26 12:54:07 Z
+    - true
+
+--- 
+mailers: 
+  columns: 
+  - id
+  - confirmation_email
+  - regular_email
+  - activation_email
+  - model_for
+  - created_at
+  - updated_at
+  - deactivation_email
+  records: 
+  - - 1
+    - hello user, this is confirmation email
+    - hello user, this is regular email
+    - hello user, this is activation email
+    - banner
+    - 2012-01-26 10:15:34 Z
+    - 2012-01-26 10:15:34 Z
+    - hello user, this is deactivation email
+  - - 2
+    - hello user , this is confirmation email
+    - hello user, this is regular email
+    - hello user, this is activation email
+    - link
+    - 2012-01-26 10:16:16 Z
+    - 2012-01-26 10:16:16 Z
+    - hello user, this is deactivation email
+  - - 3
+    - hello user, this is confirmation email
+    - hello user, this is regular email
+    - hello user, this is activation email
+    - advertisement_premium
+    - 2012-01-26 10:17:04 Z
+    - 2012-01-26 10:17:14 Z
+    - hello user, this is deactivation email
+  - - 4
+    - hello user, this is confirmation email <%= @advertisement.title %>
+    - hello user, this is regular email
+    - hello user, this is activation email
+    - advertisement_free
+    - 2012-01-26 10:17:51 Z
+    - 2012-01-26 13:53:01 Z
+    - hello user, this is deactivation email
+  - - 5
+    - hello user, this is for confirmation for contact email with <%= @contact.email %>
+    - hello user, this is for regular email
+    - hello user, this is for activation email
+    - contact
+    - 2012-01-26 12:25:56 Z
+    - 2012-01-26 14:30:25 Z
+    - hello user, this is for deactivation email
+
+--- 
+networks: 
+  columns: 
+  - id
+  - name
+  - site
+  - enabled
+  - created_at
+  - updated_at
+  - network_type
+  records: 
+  - - 1
+    - smasing magazine
+    - http://smashingmagazine.com
+    - true
+    - 2012-01-22 03:20:01 Z
+    - 2012-01-22 03:26:07 Z
+    - site
+  - - 2
+    - planetrubyonrails
+    - http://planetrubyonrails.com
+    - true
+    - 2012-01-22 03:20:48 Z
+    - 2012-01-22 03:26:07 Z
+    - site
+  - - 3
+    - Customer Support 1
+    - dump.person
+    - true
+    - 2012-01-22 03:27:46 Z
+    - 2012-01-24 08:52:48 Z
+    - messenger
+  - - 4
+    - Customer Support 2
+    - customer_support1
+    - true
+    - 2012-01-22 03:27:57 Z
+    - 2012-01-22 03:27:57 Z
+    - messenger
 
 --- 
 news: 
@@ -1206,8 +1209,8 @@ news:
       
       In his victory speech, Gingrich criticized President Barack Obama and the "media elites", and alluded to the well-funded Romney when arguing, "We don't have the kind of money that at least one of the candidates does. But we do have ideas and we do have people and we've proved here in South Carolina that people power with the right ideas beats big money."
     - true
-    - 2012-01-23 06:07:43.584023
-    - 2012-01-24 06:38:59.043903
+    - 2012-01-23 06:07:43 Z
+    - 2012-01-24 06:38:59 Z
     - us-presidential-candidate-newt-gingrich-wins-south-carolina-primary
   - - 2
     - China to run low-cost maglevs by next year
@@ -1216,9 +1219,96 @@ news:
       
       "It's ideal for mass transportation, as it is quiet and environmentally friendly", says Xu Zongxiang, general manager of Zhuzhou Electric Locomotive Company. "Its manufacturing cost is about 75 percent of a conventional light-rail train".
     - true
-    - 2012-01-23 06:09:20.847899
-    - 2012-01-24 06:23:35.852554
+    - 2012-01-23 06:09:20 Z
+    - 2012-01-24 06:23:35 Z
     - china-to-run-low-cost-maglevs-by-next-year
+
+--- 
+pages: 
+  columns: 
+  - id
+  - title
+  - content
+  - slug
+  - meta_keyword
+  - meta_content
+  - enabled
+  - model_for
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - contact us if you need us
+    - "<p style=\"text-align: justify;\"><strong style=\"font-weight: bold;\">Hubungi Kami</strong> <br /> Anda dapat menghubungi kami pada alamat :&nbsp; IklanRaksasa.com <br /> Anda juga dapat menghubungi kami dengan mengisi form di bawah ini.  Kami akan dengan senang hati menjawab pertanyaan dan komentar anda.</p>"
+    - contact-us
+    - ""
+    - ""
+    - true
+    - contact
+    - 2012-01-22 03:48:49 Z
+    - 2012-01-23 06:05:34 Z
+  - - 2
+    - Pasang iklan link
+    - |-
+      <p><span style="font-size: small;"><strong style="font-weight: bold;">Pasang Iklan Link</strong></span><br /><span style="font-size: small;"> Silahkan lengakapi form di bawah ini untuk melakukan order  pemasangan link. Dengan memasang iklan link di website kami , dapat meningkatkan traffice website anda. </span><br /> <br /><span style="font-size: small;"><strong style="font-weight: bold;">Bank Transfer</strong> <strong style="font-weight: bold;">Bank Negara Indonesia (BNI)</strong> a.n. <strong style="font-weight: bold;">MEGA ARIYANTONO</strong> No. <strong style="font-weight: bold;">Rek. 0132576303</strong> </span><br /> <br /><span style="font-size: small;"> <strong style="font-weight: bold;">PayPal</strong> <strong style="font-weight: bold;">Akun: ega.naval@gmail.com</strong> </span></p>
+      <ul>
+      <li><span style="font-size: small;">Iklan Premium: $4/bln</span></li>
+      <li><span style="font-size: small;">Iklan Link: $2/bln</span></li>
+      <li><span style="font-size: small;">Iklan Banner 125x125 A1: $3</span></li>
+      <li><span style="font-size: small;">Iklan Banner 125x125 A2: $2,5</span></li>
+      <li><span style="font-size: small;">Iklan Banner 468x60 header page: $5</span></li>
+      <li><span style="font-size: small;">Iklan Banner 468x60 main page: $4</span></li>
+      <li><span style="font-size: small;">Iklan Banner 300x250 B1: $5</span></li>
+      <li><span style="font-size: small;">Iklan Banner 300x250 B2: $4,5</span></li>
+      </ul>
+      <p><br /><span style="font-size: small;"> <strong style="font-weight: bold;">Konfirmasi</strong> </span><br /><span style="font-size: small;"> Silahkan sms ke <span style="color: #ff0000;"><strong>085726808740</strong></span> dengan format: nama Anda, nama bank  tujuan, jumlah transfer, posisi banner &amp; nama web dimana Anda ingin  memasang iklan. </span><br /><span style="font-size: small;"> Contoh: Sudah transfer Andi, BNI, 50.xxx, sidebar B1, iklanraksasa, mohon segera diaktifkan.</span></p>
+    - pasang-iklan-link
+    - 
+    - 
+    - true
+    - link
+    - 2012-01-22 06:52:59 Z
+    - 2012-01-22 06:52:59 Z
+  - - 3
+    - Pasang iklan banner
+    - |-
+      <h1 class="content-title">Pasang Banner</h1>
+      <p><span style="font-size: small;">Silahkan lengakapi form di bawah ini untuk melakukan  order pemasangan Banner. Sebelum melakukan order, silahkan siapkan  banner yang akan Anda pasang (format yang diijinkan adalah .jpg, .png,  .gif dan .swf) sesuai ukuran yang Anda pesan.</span></p>
+      <p><span style="font-size: small;"><strong>Ketentuan</strong>:</span><br /><span style="font-size: small;"> - Banner tidak  mengandung unsur  SARA  dan  Pornografi</span><br /><span style="font-size: small;"> - Isi Banner menjadi tanggung jawab pemasang banner.</span></p>
+      <p><span style="font-size: small;"><strong>Bank Transfer</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb<p;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Bank Negara Indonesia (BNI)</span><br /><span style="font-size: small;"> a.n. MEGA ARIYANTONO</span><br /><span style="font-size: small;"> No. Rek. 0132576303</span></p><p><span style="font-size: small;">&nbsp;Bank Mandiri</span><br /><span style="font-size: small;"> a.n. MEGA ARIYANTONO</span><br /><span style="font-size: small;"> no. Rek.</span><br /> <br /><span style="font-size: small;"> Bank BCA</span><br /><span style="font-size: small;"> a.n. MEGA ARIYANTONO</span><br /><span style="font-size: small;"> no. Rek.</span><br /> <br /><span style="font-size: small;"> PayPal</span><br /><span style="font-size: small;"> Akun: ega.naval@gmail.com</span><br /><span style="font-size: small;"> Iklan Premium: $4/bln</span><br /><span style="font-size: small;"> Iklan Link: $2/bln</span><br /><span style="font-size: small;"> Iklan Banner 125x125 A1: $3</span><br /><span style="font-size: small;"> Iklan Banner 125x125 A2: $2,5</span><br /><span style="font-size: small;"> Iklan Banner 468x60 header page: $5</span><br /><span style="font-size: small;"> Iklan Banner 468x60 main page: $4</span><br /><span style="font-size: small;"> Iklan Banner 300x250 B1: $5</span><br /><span style="font-size: small;"> Iklan Banner 300x250 B2: $4,5</span></p>
+      <p><span style="font-size: small;"><strong>Konfirmasi&nbsp;</strong></span></p>
+      <p><span style="font-size: small;"><strong></strong> Silahkan sms ke 085726808740 dengan format: nama Anda, nama bank  tujuan, jumlah transfer, posisi banner &amp; nama web dimana Anda ingin    memasang iklan.</span></p>
+      <p><span style="font-size: small;">Contoh: Sudah transfer Andi, BNI,  50.xxx, sidebar B1, iklanraksasa, mohon segera diaktifkan.</span></p>
+    - pasang-iklan-banner
+    - 
+    - 
+    - true
+    - banner
+    - 2012-01-22 06:56:34 Z
+    - 2012-01-22 06:59:51 Z
+  - - 4
+    - Pasang Iklan Baris
+    - |-
+      <p><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong>Content</strong> dari website ini merupakan <strong>kontribusi</strong> dari para <strong>pemasang iklan</strong>. </span></p>
+      <p><span style="font-size: small; font-family: arial,helvetica,sans-serif;">Isi  iklan merupakan tanggung jawab pemasang iklan. </span></p>
+      <p><span style="font-size: small; font-family: arial,helvetica,sans-serif;">Dimohon untuk  berhati-hati sebelum menindaklanjuti iklan yang Anda minati. 123</span><span style="text-decoration: underline;"><span style="font-size: medium;"><strong></strong></span></span></p>
+    - pasang-iklan-baris
+    - ""
+    - ""
+    - true
+    - advertisement
+    - 2012-01-22 08:40:26 Z
+    - 2012-01-23 06:04:21 Z
+  - - 5
+    - download
+    - all downloadable free stuff goes here
+    - download
+    - ""
+    - ""
+    - true
+    - 
+    - 2012-01-25 06:11:28 Z
+    - 2012-01-25 06:22:50 Z
 
 --- 
 site_configurations: 
@@ -1244,5 +1334,5 @@ site_configurations:
     - logo.jpg
     - admin@iklanraksasa.com
     - Web Master
-    - 2012-01-23 08:14:58.189326
-    - 2012-01-23 09:39:22.629676
+    - 2012-01-23 08:14:58 Z
+    - 2012-01-23 09:39:22 Z
