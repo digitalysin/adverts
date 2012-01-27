@@ -22,13 +22,13 @@ admin_users:
     - 
     - 
     - 
-    - 15
+    - 16
+    - 2012-01-27 07:20:15 Z
     - 2012-01-27 04:05:26 Z
-    - 2012-01-27 03:25:15 Z
     - 127.0.0.1
     - 127.0.0.1
     - 2012-01-22 11:24:00 Z
-    - 2012-01-27 04:05:26 Z
+    - 2012-01-27 07:20:15 Z
 
 --- 
 advertisement_categories: 
@@ -641,6 +641,24 @@ advertisements:
     - contohiklan3.jpg
     - 
     - grosir-kalung-korea-import
+  - - 12
+    - OMG
+    - digitalysin@gmail.com
+    - Malang
+    - 0341-123456
+    - 2
+    - 1
+    - 1
+    - OMG ... this is cool
+    - http://temantapimesra.com
+    - omg , this is cool man, by the way and by the way and by the way yaya
+    - omg
+    - 2012-01-27 07:23:44 Z
+    - 2012-01-27 07:27:05 Z
+    - false
+    - contohiklan2.jpg
+    - 
+    - omg-this-is-cool
 
 --- 
 banner_categories: 
@@ -975,6 +993,30 @@ banners:
     - 2012-01-25 17:01:33 Z
     - widescreen__2_.jpg
     - false
+  - - 25
+    - Singapore blog awards
+    - digitalysin@gmail.com
+    - 0341-123456
+    - 4
+    - 1
+    - http://deviantart.com
+    - this is for content, please dont be sad ..... lalalalalla
+    - 2012-01-27 07:31:29 Z
+    - 2012-01-27 07:31:29 Z
+    - htc_LOGO.jpg
+    - true
+  - - 26
+    - Miltary
+    - digitalysin@gmail.com
+    - 0341-123456
+    - 4
+    - 1
+    - http://vectorgraphic.com
+    - military content for military content for military content
+    - 2012-01-27 07:33:38 Z
+    - 2012-01-27 07:33:38 Z
+    - Recruiting-Mil-Logo_md.jpg
+    - true
 
 --- 
 contacts: 
@@ -1143,13 +1185,25 @@ mailers:
     - 2012-01-26 13:53:01 Z
     - hello user, this is deactivation email
   - - 5
-    - hello user, this is for confirmation for contact email with <%= @contact.email %>
-    - hello user, this is for regular email
-    - hello user, this is for activation email
+    - |
+      <p>
+      	hello user, this is for confirmation for contact email with &lt;%= @contact.email %&gt;</p>
+
+    - |
+      <p>
+      	hello user, this is for regular email</p>
+
+    - |
+      <p>
+      	hello user, this is for activation email</p>
+
     - contact
     - 2012-01-26 12:25:56 Z
-    - 2012-01-26 14:30:25 Z
-    - hello user, this is for deactivation email
+    - 2012-01-27 08:48:22 Z
+    - |
+      <p>
+      	hello user, this is for deactivation email</p>
+
 
 --- 
 networks: 
@@ -1288,27 +1342,34 @@ pages:
     - 2012-01-22 06:59:51 Z
   - - 4
     - Pasang Iklan Baris
-    - |-
-      <p><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong>Content</strong> dari website ini merupakan <strong>kontribusi</strong> dari para <strong>pemasang iklan</strong>. </span></p>
-      <p><span style="font-size: small; font-family: arial,helvetica,sans-serif;">Isi  iklan merupakan tanggung jawab pemasang iklan. </span></p>
-      <p><span style="font-size: small; font-family: arial,helvetica,sans-serif;">Dimohon untuk  berhati-hati sebelum menindaklanjuti iklan yang Anda minati. 123</span><span style="text-decoration: underline;"><span style="font-size: medium;"><strong></strong></span></span></p>
+    - |
+      <p>
+      	<span style="font-size: small; font-family: arial,helvetica,sans-serif;">Content dari website ini merupakan kontribusi dari para pemasang iklan. </span></p>
+      <p>
+      	<span style="font-size: small; font-family: arial,helvetica,sans-serif;">Isi iklan merupakan tanggung jawab pemasang iklan. </span></p>
+      <p>
+      	<span style="font-size: small; font-family: arial,helvetica,sans-serif;">Dimohon untuk berhati-hati sebelum menindaklanjuti iklan yang Anda minati. 123</span></p>
+
     - pasang-iklan-baris
     - ""
     - ""
     - true
     - advertisement
     - 2012-01-22 08:40:26 Z
-    - 2012-01-23 06:04:21 Z
+    - 2012-01-27 08:47:06 Z
   - - 5
     - download
-    - all downloadable free stuff goes here
+    - |
+      <p>
+      	<strong>all downloadable free stuff goes here</strong> dude</p>
+
     - download
     - ""
     - ""
     - true
     - 
     - 2012-01-25 06:11:28 Z
-    - 2012-01-25 06:22:50 Z
+    - 2012-01-27 09:03:03 Z
 
 --- 
 site_configurations: 
@@ -1341,10 +1402,182 @@ site_configurations:
     - admin@iklanraksasa.com
     - Web Master
     - 2012-01-23 08:14:58 Z
-    - 2012-01-27 04:51:07 Z
-    - 5
-    - 20
+    - 2012-01-27 05:42:14 Z
+    - 3
+    - 3
     - 30
     - 20000.0
     - 12000.0
     - porn,junk,sex
+
+--- 
+statistics: 
+  columns: 
+  - id
+  - today
+  - total_ads_for_today
+  - total_ads_for_yesterday
+  - total_ads
+  - total_visit_for_today
+  - total_visited
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 2012-01-27
+    - 1
+    - 11
+    - 12
+    - 5
+    - 5
+    - 2012-01-27 07:35:17 Z
+    - 2012-01-27 07:35:17 Z
+
+--- 
+visitors: 
+  columns: 
+  - id
+  - ip_address
+  - path_info
+  - date_visited
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 127.0.0.1
+    - /advertisements
+    - 2012-01-27
+    - 2012-01-27 06:47:58 Z
+    - 2012-01-27 06:47:58 Z
+  - - 2
+    - 127.0.0.1
+    - /
+    - 2012-01-27
+    - 2012-01-27 06:48:31 Z
+    - 2012-01-27 06:48:31 Z
+  - - 3
+    - 127.0.0.1
+    - /links
+    - 2012-01-27
+    - 2012-01-27 07:01:18 Z
+    - 2012-01-27 07:01:18 Z
+  - - 4
+    - 127.0.0.1
+    - /contacts
+    - 2012-01-27
+    - 2012-01-27 07:02:13 Z
+    - 2012-01-27 07:02:13 Z
+  - - 5
+    - 127.0.0.1
+    - /news/china-to-run-low-cost-maglevs-by-next-year
+    - 2012-01-27
+    - 2012-01-27 07:04:26 Z
+    - 2012-01-27 07:04:26 Z
+  - - 6
+    - 127.0.0.1
+    - /admin/advertisements/11
+    - 2012-01-27
+    - 2012-01-27 07:16:36 Z
+    - 2012-01-27 07:16:36 Z
+  - - 7
+    - 127.0.0.1
+    - /admin/advertisements
+    - 2012-01-27
+    - 2012-01-27 07:18:50 Z
+    - 2012-01-27 07:18:50 Z
+  - - 8
+    - 127.0.0.1
+    - /admin/advertisements/11/edit
+    - 2012-01-27
+    - 2012-01-27 07:18:52 Z
+    - 2012-01-27 07:18:52 Z
+  - - 9
+    - 127.0.0.1
+    - /admin/logout
+    - 2012-01-27
+    - 2012-01-27 07:20:09 Z
+    - 2012-01-27 07:20:09 Z
+  - - 10
+    - 127.0.0.1
+    - /admin
+    - 2012-01-27
+    - 2012-01-27 07:20:09 Z
+    - 2012-01-27 07:20:09 Z
+  - - 11
+    - 127.0.0.1
+    - /admin/login
+    - 2012-01-27
+    - 2012-01-27 07:20:10 Z
+    - 2012-01-27 07:20:10 Z
+  - - 12
+    - 127.0.0.1
+    - /admin/advertisements/new
+    - 2012-01-27
+    - 2012-01-27 07:22:21 Z
+    - 2012-01-27 07:22:21 Z
+  - - 13
+    - 127.0.0.1
+    - /admin/advertisements/12
+    - 2012-01-27
+    - 2012-01-27 07:23:45 Z
+    - 2012-01-27 07:23:45 Z
+  - - 14
+    - 127.0.0.1
+    - /admin/advertisements/12/edit
+    - 2012-01-27
+    - 2012-01-27 07:26:43 Z
+    - 2012-01-27 07:26:43 Z
+  - - 15
+    - 127.0.0.1
+    - /admin/banner_categories
+    - 2012-01-27
+    - 2012-01-27 07:30:43 Z
+    - 2012-01-27 07:30:43 Z
+  - - 16
+    - 127.0.0.1
+    - /admin/banners
+    - 2012-01-27
+    - 2012-01-27 07:30:45 Z
+    - 2012-01-27 07:30:45 Z
+  - - 17
+    - 127.0.0.1
+    - /admin/banners/new
+    - 2012-01-27
+    - 2012-01-27 07:30:53 Z
+    - 2012-01-27 07:30:53 Z
+  - - 18
+    - 127.0.0.1
+    - /admin/banners/25
+    - 2012-01-27
+    - 2012-01-27 07:31:30 Z
+    - 2012-01-27 07:31:30 Z
+  - - 19
+    - 127.0.0.1
+    - /admin/banners/25/send_email
+    - 2012-01-27
+    - 2012-01-27 07:31:34 Z
+    - 2012-01-27 07:31:34 Z
+  - - 20
+    - 127.0.0.1
+    - /admin/banners/26
+    - 2012-01-27
+    - 2012-01-27 07:33:38 Z
+    - 2012-01-27 07:33:38 Z
+  - - 21
+    - 127.0.0.1
+    - /admin/pages
+    - 2012-01-27
+    - 2012-01-27 07:47:19 Z
+    - 2012-01-27 07:47:19 Z
+  - - 22
+    - 127.0.0.1
+    - /admin/pages/5/edit
+    - 2012-01-27
+    - 2012-01-27 07:47:22 Z
+    - 2012-01-27 07:47:22 Z
+  - - 23
+    - 127.0.0.1
+    - /admin/pages/5
+    - 2012-01-27
+    - 2012-01-27 08:32:36 Z
+    - 2012-01-27 08:32:36 Z
