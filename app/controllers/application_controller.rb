@@ -15,6 +15,7 @@ class ApplicationController < ActionController::Base
         unless Statistic.today?
           Statistic.update_advertisements
         end      
+      
       end
     end
 end
