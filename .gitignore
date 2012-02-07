@@ -3,3 +3,5 @@ db/*.sqlite3
 log/*.log
 tmp/
 .DS_Store
+/log/production.log
+/app/views/shared/_form_registration.html.haml.backup
