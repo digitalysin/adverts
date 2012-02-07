@@ -90,13 +90,13 @@ GEM
     method_source (0.6.7)
       ruby_parser (>= 2.3.1)
     mime-types (1.16)
-    mysql2 (0.2.18)
     orm_adapter (0.0.6)
     passenger (3.0.9)
       daemon_controller (>= 0.2.5)
       fastthread (>= 1.0.1)
       rack
       rake (>= 0.8.1)
+    pg (0.12.2)
     polyglot (0.3.2)
     pry (0.9.7.4)
       coderay (~> 0.9.8)
@@ -133,7 +133,6 @@ GEM
     sass (3.1.12)
     sexp_processor (3.0.10)
     slop (2.1.0)
-    tconsole (1.0.0)
     thor (0.14.6)
     treetop (1.4.10)
       polyglot
@@ -153,11 +152,10 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   kaminari
-  mysql2 (= 0.2.18)
   passenger
+  pg
   pry
   pry-rails
   rails (= 3.0.9)
   rmagick
-  tconsole
   yaml_db

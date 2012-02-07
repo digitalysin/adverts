@@ -1,35 +1,35 @@
-= form_for Advertisement.new, :html => {:multipart => true} do |f|
+= form_tag :url => advertisements_path, :multipart => true, :method => :post do
   %table
     %tr
-      %td= f.label :nama
+      %td= label_tag 'Nama'
       %td :
-      %td= f.text_field :name
+      %td= text_field_tag "advertisement[name]"
     %tr
-      %td= f.label :email
+      %td= label_tag 'Email'
       %td :
-      %td= f.text_field :email
+      %td= text_field_tag "advertisement[email]"
     %tr
-      %td= f.label :kota
+      %td= label_tag 'Kota'
       %td :
-      %td= f.text_field :city
+      %td= text_field_tag "advertisement[city]"
     %tr
-      %td= f.label :telepon
+      %td= label_tag :telepon
       %td :
-      %td= f.text_field :phone
+      %td= text_field_tag "advertisement[phone]"
     %tr
-      %td= f.label :tipe_iklan
+      %td= label_tag 'Tipe Iklan'
       %td :
       %td
-        = f.collection_select :advertisement_type_id, AdvertisementType.all, :id, :name, 
-          {}, {:onchange => "showprice(event,'showprice2');"}
+        = select_tag 'advertisement[advertisement_type_id]', 
+          options_from_collection_for_select(AdvertisementType.all, :id, :name), :onchange => "showprice(event,'showprice2');"
         %br
         %table#showprice2{:style => "display:none"}
           %tr
-            %td= f.label :lama
+            %td= label_tag "Lama"
             %td :
-            %td= f.collection_select :advertisement_price_id, AdvertisementPrice.all, :id, :name
+            %td= select_tag "advertisment[advertisment_price_id]", options_from_collection_for_select(AdvertisementPrice.all, :id, :name)
     %tr
-      %td= f.label :kategori_iklan
+      %td= label_tag 'Kategori Iklan'
       %td :
       %td
         %select{:id => :advertisement_advertisement_category_id, :name => "advertisement[advertisement_category_id]"}
@@ -38,26 +38,27 @@
               %option{:disabled => :disabled}= ac.name
               - ac.sub_category.each do |sub|
                 %option{:value => sub.id}= "&nbsp;&nbsp;#{sub.name}".html_safe
+                
     %tr
-      %td= f.label :judul
+      %td= label_tag 'Judul'
       %td :
-      %td= f.text_field :title
+      %td= text_field_tag 'advertisment[title]'
     %tr
-      %td= f.label :website
+      %td= label_tag 'Website'
       %td :
       %td
-        = f.text_field :site
+        = text_field_tag 'advertisement[site]'
         %br
         %p.red_notif mohon sertakan http:// pada website anda
     %tr
-      %td= f.label :isi
+      %td= label_tag :isi
       %td :
-      %td= f.text_area :content, :cols => 34, :rows => 5
+      %td= text_area_tag 'advertisement[content]', '', :cols => 34, :rows => 5
     %tr
-      %td= f.label 'label/tag'
+      %td= label_tag 'label/tag'
       %td :
       %td
-        = f.text_field :tag
+        = text_field_tag "advertisement[tag]"
         %p.red_notif
           Kata atau phrase yang mewakili iklan
           %br
@@ -67,8 +68,9 @@
     %tr
       %td Gambar
       %td :
-      %td= f.file_field :image
+      %td= file_field_tag 'advertisement[image]'
     %tr
       %td
       %td
-      %td= f.submit "Submit"
+      %td= submit_tag "Submit"
+

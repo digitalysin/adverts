@@ -4,5 +4,5 @@ class Network < ActiveRecord::Base
   validates_presence_of :name,:site,:network_type
   
   scope :messenger, where(:enabled => true, :network_type => :messenger).limit(3)
-  scope :affiliate, where(:enabled => true, :network_type => :site).order("rand(),created_at").limit(10)
+  scope :affiliate, where(:enabled => true, :network_type => :site).order("random(),created_at").limit(10)
 end

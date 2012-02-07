@@ -1,3 +1,6 @@
+- @premium_advertisements = Advertisement.premium_ads.limit(@site_configuration.maximum_premium_ads_per_page)
+- @free_advertisements = Advertisement.free_ads.page(params[:page]).per(@site_configuration.maximum_free_ads_per_page)
+
 - @premium_advertisements.each do |ads|
   .contentleft.premium
     %h1
